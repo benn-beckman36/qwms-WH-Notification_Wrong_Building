@@ -1,0 +1,4338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEFDCEDB-8535-41DD-88C0-35970D74F1AA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>QWMS</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QWMS</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ManifestCertificateThumbprint>EA299DB0286963E0FA7ED32C87705B269780C7CC</ManifestCertificateThumbprint>
+    <ManifestKeyFile>QWMSCertificate.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\172.17.0.33\WebSite\WinAP\QSMCQWMS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>1</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://172.17.0.33/WinAP/QSMCQWMS/</InstallUrl>
+    <TargetCulture>zh-CN</TargetCulture>
+    <ProductName>QSMC QWMS</ProductName>
+    <PublisherName>QSMC QWMS</PublisherName>
+    <MinimumRequiredVersion>1.0.0.12</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>44</ApplicationRevision>
+    <ApplicationVersion>1.4.0.44</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Absolute</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>\\SCMDB31\QSMC_QWMS_Pub\CrystalReport\</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonObjects, Version=1.0.1.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\CommonObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="ECMS.CommonLibrary, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ECMS.CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AGV\CombineStock_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\CombineStock_AGV.Designer.cs">
+      <DependentUpon>CombineStock_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\InventoryCheck_RTime_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\InventoryCheck_RTime_AGV.Designer.cs">
+      <DependentUpon>InventoryCheck_RTime_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\Manage_IntelligentReceive_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\Manage_IntelligentReceive_AGV.Designer.cs">
+      <DependentUpon>Manage_IntelligentReceive_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\StorageIn_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\StorageIn_AGV.Designer.cs">
+      <DependentUpon>StorageIn_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\StorageIn_Intelligent_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\StorageIn_Intelligent_AGV.Designer.cs">
+      <DependentUpon>StorageIn_Intelligent_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\StorageIn_SMT_MultiOnLineIn_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\StorageIn_SMT_MultiOnLineIn_AGV.Designer.cs">
+      <DependentUpon>StorageIn_SMT_MultiOnLineIn_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\StorageLocationQuery_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\StorageLocationQuery_AGV.Designer.cs">
+      <DependentUpon>StorageLocationQuery_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\StorageOut_OnlineOut_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\StorageOut_OnlineOut_AGV.Designer.cs">
+      <DependentUpon>StorageOut_OnlineOut_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_LocationDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_LocationDefine.Designer.cs">
+      <DependentUpon>Alim_LocationDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_LogQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_Manage_LockPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_Manage_LockPN.Designer.cs">
+      <DependentUpon>Alim_Manage_LockPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_MaterialSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_SapDataQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_SDSDataSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageComparison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageInMblnrSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageInMblnrSelect.Designer.cs">
+      <DependentUpon>Alim_StorageInMblnrSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageIn_Offline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageIn_Offline.Designer.cs">
+      <DependentUpon>Alim_StorageIn_Offline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageIn_Online.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageIn_Online.Designer.cs">
+      <DependentUpon>Alim_StorageIn_Online.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageIn_SMT_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageIn_SMT_Return.Designer.cs">
+      <DependentUpon>Alim_StorageIn_SMT_Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageOut_Offline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageOut_Offline.Designer.cs">
+      <DependentUpon>Alim_StorageOut_Offline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageOut_OnLineOut_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageOut_OnLineOut_Add.Designer.cs">
+      <DependentUpon>Alim_StorageOut_OnLineOut_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageOut_SimulationOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageOut_SimulationOut.Designer.cs">
+      <DependentUpon>Alim_StorageOut_SimulationOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alim\Alim_StorageQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_ChangeReplenishStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_ChangeReplenishStatus.Designer.cs">
+      <DependentUpon>Replenishment_ChangeReplenishStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_ChangeReplenishStatus_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_ChangeReplenishStatus_Edit.Designer.cs">
+      <DependentUpon>Replenishment_ChangeReplenishStatus_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_GenerateReplenishOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_GenerateReplenishOrder.Designer.cs">
+      <DependentUpon>Replenishment_GenerateReplenishOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_MaintainMapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_MaintainMapping.Designer.cs">
+      <DependentUpon>Replenishment_MaintainMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_QueryReplenishData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_QueryReplenishData.Designer.cs">
+      <DependentUpon>Replenishment_QueryReplenishData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_SetupMailNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\Replenishment_SetupMailNotice.Designer.cs">
+      <DependentUpon>Replenishment_SetupMailNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAK\REPLN\TransferMaintainMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAK\REPLN\TransferMaintainMail.Designer.cs">
+      <DependentUpon>TransferMaintainMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionStringProvider.cs" />
+    <Compile Include="ECForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECForm.Designer.cs">
+      <DependentUpon>ECForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\GBWMS_SemiProduct_OnlineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\GBWMS_SemiProduct_OnlineOut.designer.cs">
+      <DependentUpon>GBWMS_SemiProduct_OnlineOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Manage_LocationCombineCSMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Manage_LocationCombineCSMC.Designer.cs">
+      <DependentUpon>Manage_LocationCombineCSMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_SemiProduct_OnLineIn_MultiPallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_SemiProduct_OnLineIn_MultiPallet.Designer.cs">
+      <DependentUpon>StorageIn_SemiProduct_OnLineIn_MultiPallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\IQCBorrowMaterials_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\IQCBorrowMaterials_Detail.Designer.cs">
+      <DependentUpon>IQCBorrowMaterials_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Intelligent_TWW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Intelligent_TWW.Designer.cs">
+      <DependentUpon>StorageIn_Intelligent_TWW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_QueryERRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_QueryERRO.Designer.cs">
+      <DependentUpon>StorageIn_SMT_QueryERRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQC\IQC_OverDue_Inspect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQC\IQC_OverDue_Inspect.Designer.cs">
+      <DependentUpon>IQC_OverDue_Inspect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQC\IQC_Overdue_Reinspection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQC\IQC_Overdue_Reinspection.Designer.cs">
+      <DependentUpon>IQC_Overdue_Reinspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQC\IQC_PrintExpDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQC\IQC_PrintExpDate.Designer.cs">
+      <DependentUpon>IQC_PrintExpDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQC\IQC_QueryOverdueInspect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQC\IQC_QueryOverdueInspect.Designer.cs">
+      <DependentUpon>IQC_QueryOverdueInspect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DateCodeRuleDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DateCodeRuleDefine.Designer.cs">
+      <DependentUpon>Admin_DateCodeRuleDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_LocationPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_LocationPrint.Designer.cs">
+      <DependentUpon>Admin_LocationPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_DateCodeTimeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_DateCodeTimeQuery.Designer.cs">
+      <DependentUpon>Manage_DateCodeTimeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_EmptyLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_EmptyLocation.Designer.cs">
+      <DependentUpon>Manage_EmptyLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_HoldInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_HoldInformation.Designer.cs">
+      <DependentUpon>Manage_HoldInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ImportInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_InitialTimeOf46PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_InitialTimeOf46PO.Designer.cs">
+      <DependentUpon>Manage_InitialTimeOf46PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_IntelligentReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_IntelligentReceive.Designer.cs">
+      <DependentUpon>Manage_IntelligentReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_IQC_BadDataPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_IQC_BadDataPrint.Designer.cs">
+      <DependentUpon>Manage_IQC_BadDataPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationChange.Designer.cs">
+      <DependentUpon>Manage_LocationChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationCombine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationCombine.Designer.cs">
+      <DependentUpon>Manage_LocationCombine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationCombine_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationCombine_Detail.Designer.cs">
+      <DependentUpon>Manage_LocationCombine_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationCombine_DetailCSMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationCombine_DetailCSMC.Designer.cs">
+      <DependentUpon>Manage_LocationCombine_DetailCSMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationMaintenance_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationMaintenance_AddMixed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationMaintenance_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationMaintenance_QueryModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationPallet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationPallet.Designer.cs">
+      <DependentUpon>Manage_LocationPallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationPallet_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationPallet_Info.Designer.cs">
+      <DependentUpon>Manage_LocationPallet_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationSelect_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LocationSelect_New.Designer.cs">
+      <DependentUpon>Manage_LocationSelect_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_LogQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_MaterialConvertPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_MaterialConvertPrint.Designer.cs">
+      <DependentUpon>Manage_MaterialConvertPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_MaterialConvertSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_MaterialConvertSelect.Designer.cs">
+      <DependentUpon>Manage_MaterialConvertSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_MaterialSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletCombine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletCombine.Designer.cs">
+      <DependentUpon>Manage_PalletCombine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletQtyMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletQtyMaintain.Designer.cs">
+      <DependentUpon>Manage_PalletQtyMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletQuery.Designer.cs">
+      <DependentUpon>Manage_PalletQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletSplit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PalletSplit.Designer.cs">
+      <DependentUpon>Manage_PalletSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PrintReLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_PrintReLabel.Designer.cs">
+      <DependentUpon>Manage_PrintReLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_Real_time_pending_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_Real_time_pending_query.Designer.cs">
+      <DependentUpon>Manage_Real_time_pending_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ReceivePlatform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ReceivePlatform.Designer.cs">
+      <DependentUpon>Manage_ReceivePlatform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ReceivePlatformReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ReceivePlatformReport.Designer.cs">
+      <DependentUpon>Manage_ReceivePlatformReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_RefidSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_RefidSelect.Designer.cs">
+      <DependentUpon>Manage_RefidSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ResellInventory_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapDataQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapDocumentNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapDocumentNo.Designer.cs">
+      <DependentUpon>Manage_SapDocumentNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapSimulationDataPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapSimulationDataPrint.designer.cs">
+      <DependentUpon>Manage_SapSimulationDataPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapSimulationDataPrint_Split.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapSimulationDataPrint_Split.Designer.cs">
+      <DependentUpon>Manage_SapSimulationDataPrint_Split.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapSimulationDataQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SapSimulationDataQuery.Designer.cs">
+      <DependentUpon>Manage_SapSimulationDataQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ScrapPackingQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_ScrapPackingQuery.Designer.cs">
+      <DependentUpon>Manage_ScrapPackingQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SimulationOutQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SimulationOutQuery.Designer.cs">
+      <DependentUpon>Manage_SimulationOutQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SparePartsDocmentQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SparePartsDocmentQuery.Designer.cs">
+      <DependentUpon>Manage_SparePartsDocmentQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SparePartsStorageQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_SparePartsStorageQuery.Designer.cs">
+      <DependentUpon>Manage_SparePartsStorageQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageBatchDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageBatchDown.Designer.cs">
+      <DependentUpon>Manage_StorageBatchDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageComparison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageContrast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageContrastWithDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageQuery_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageQuery_PCBA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageQuery_PCBA.Designer.cs">
+      <DependentUpon>Manage_StorageQuery_PCBA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageStatus.Designer.cs">
+      <DependentUpon>Manage_StorageStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageStatus_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageStatus_Detail.Designer.cs">
+      <DependentUpon>Manage_StorageStatus_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageStatus_SetupRowCloumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageStatus_SetupRowCloumn.Designer.cs">
+      <DependentUpon>Manage_StorageStatus_SetupRowCloumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_StorageTimeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_TransferProgress_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_TransferProgress_Query.Designer.cs">
+      <DependentUpon>Manage_TransferProgress_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Manage_WasteMaintainStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Manage_WasteMaintainStorage.Designer.cs">
+      <DependentUpon>Manage_WasteMaintainStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Mange_DateCodeRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Mange_DateCodeRule.Designer.cs">
+      <DependentUpon>Mange_DateCodeRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Mange_DateCodeRule_Pop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Mange_DateCodeRule_Pop.designer.cs">
+      <DependentUpon>Mange_DateCodeRule_Pop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Mange_Reflesh_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Mange_Reflesh_Stock.Designer.cs">
+      <DependentUpon>Mange_Reflesh_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Mange_SNTOQMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Mange_SNTOQMS.designer.cs">
+      <DependentUpon>Mange_SNTOQMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGAUT\Online_EC_Copare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGAUT\Online_EC_Copare.Designer.cs">
+      <DependentUpon>Online_EC_Copare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\StorageOut_OnlineOut_SimulationOut_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\StorageOut_OnlineOut_SimulationOut_AGV.Designer.cs">
+      <DependentUpon>StorageOut_OnlineOut_SimulationOut_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SimulationOut_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SimulationOut_DateCode.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_SimulationOut_DateCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_Transfer_311.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_Transfer_311.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_Transfer_311.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnlineOut_TWW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnlineOut_TWW.Designer.cs">
+      <DependentUpon>StorageOut_OnlineOut_TWW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnlineOut_TWW_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnlineOut_TWW_Edit.Designer.cs">
+      <DependentUpon>StorageOut_OnlineOut_TWW_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AGV\StorageOut_SimulationScan_AGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AGV\StorageOut_SimulationScan_AGV.Designer.cs">
+      <DependentUpon>StorageOut_SimulationScan_AGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\StoreOutReportCFG.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreOutReportCFG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferIn_101_Split.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferIn_101_Split.Designer.cs">
+      <DependentUpon>TransferIn_101_Split.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.Designer.cs">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_EC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_EC.Designer.cs">
+      <DependentUpon>StorageIn_EC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_DateCode.Designer.cs">
+      <DependentUpon>StorageIn_EC_DateCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Intelligent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Intelligent.Designer.cs">
+      <DependentUpon>StorageIn_Intelligent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_REJECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_REJECT.Designer.cs">
+      <DependentUpon>StorageIn_IQC_REJECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Pallet_MultiOnLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Pallet_MultiOnLineIn.Designer.cs">
+      <DependentUpon>StorageIn_Pallet_MultiOnLineIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_MultiOnLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_MultiOnLineIn.Designer.cs">
+      <DependentUpon>StorageIn_SMT_MultiOnLineIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_Query_RefIDLocat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_Query_RefIDLocat.Designer.cs">
+      <DependentUpon>StorageIn_SMT_Query_RefIDLocat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_InvContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_InvContent.Designer.cs">
+      <DependentUpon>InventoryCheck_InvContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_PreProgresses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_PreProgresses.Designer.cs">
+      <DependentUpon>InventoryCheck_PreProgresses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_ProgressQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_ProgressQuery.Designer.cs">
+      <DependentUpon>InventoryCheck_ProgressQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_RTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_RTime.Designer.cs">
+      <DependentUpon>InventoryCheck_RTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_Intelligent_personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_Intelligent_personnel.Designer.cs">
+      <DependentUpon>Admin_Intelligent_personnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\AddTruckOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\AddTruckOrder.Designer.cs">
+      <DependentUpon>AddTruckOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Admin_CarInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Admin_CarInfo.Designer.cs">
+      <DependentUpon>Admin_CarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Admin_PortAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Admin_PortAdd.designer.cs">
+      <DependentUpon>Admin_PortAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\GBWMS_SemiProduct_TransferOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\GBWMS_SemiProduct_TransferOut.designer.cs">
+      <DependentUpon>GBWMS_SemiProduct_TransferOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\InventryContrastbyStorageLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\InventryContrastbyStorageLocation.Designer.cs">
+      <DependentUpon>InventryContrastbyStorageLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\IQCBorrowMaterial_BorrowMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\IQCBorrowMaterial_BorrowMaterial.Designer.cs">
+      <DependentUpon>IQCBorrowMaterial_BorrowMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\IQCBorrowMaterial_HistoricalQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\IQCBorrowMaterial_HistoricalQuery.designer.cs">
+      <DependentUpon>IQCBorrowMaterial_HistoricalQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\IQCBorrowMaterial_ReturnMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\IQCBorrowMaterial_ReturnMaterial.designer.cs">
+      <DependentUpon>IQCBorrowMaterial_ReturnMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Manage_IssueProgressQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Manage_IssueProgressQuery.designer.cs">
+      <DependentUpon>Manage_IssueProgressQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Manage_StorageQueryCSMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Manage_StorageQueryCSMC.designer.cs">
+      <DependentUpon>Manage_StorageQueryCSMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_LocationSelectCSMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_QueryEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_QueryEC.Designer.cs">
+      <DependentUpon>StorageIn_QueryEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\StorageIn_SemiProduct_OnLineInNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageOut_AddDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageOut_AddDoc.Designer.cs">
+      <DependentUpon>StorageOut_AddDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\StorageOut_AddDocQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageOut_AddDocQuery.Designer.cs">
+      <DependentUpon>StorageOut_AddDocQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\StorageOut_SemiProductOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\StorageOut_SemiProductOut.Designer.cs">
+      <DependentUpon>StorageOut_SemiProductOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferInGuardConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferInGuardConfirm.Designer.cs">
+      <DependentUpon>TransferInGuardConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferInMTConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferInMTConfirm.Designer.cs">
+      <DependentUpon>TransferInMTConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferInWHReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferInWHReceive.Designer.cs">
+      <DependentUpon>TransferInWHReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferIn_SapDataSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferOutGuardConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferOutGuardConfirm.Designer.cs">
+      <DependentUpon>TransferOutGuardConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferOutWHConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferOutWHConfirm.Designer.cs">
+      <DependentUpon>TransferOutWHConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferOut_OnPassage_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferOut_OnPassage_Query.Designer.cs">
+      <DependentUpon>TransferOut_OnPassage_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferOut_SemiProduct_Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferOut_SemiProduct_Confirm.designer.cs">
+      <DependentUpon>TransferOut_SemiProduct_Confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\TransferOut_SemiProduct_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\TransferOut_SemiProduct_Query.designer.cs">
+      <DependentUpon>TransferOut_SemiProduct_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_46PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_46PO.Designer.cs">
+      <DependentUpon>Transfer_46PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_AdditionalPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_AdditionalPrint.Designer.cs">
+      <DependentUpon>Transfer_AdditionalPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_BindCarInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_BindCarInfo.Designer.cs">
+      <DependentUpon>Transfer_BindCarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_BindPortInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_BindPortInfo.Designer.cs">
+      <DependentUpon>Transfer_BindPortInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_Query.designer.cs">
+      <DependentUpon>Transfer_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_SemiProductIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBWMS\Transfer_SemiProductIn.Designer.cs">
+      <DependentUpon>Transfer_SemiProductIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_InNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_Query.Designer.cs">
+      <DependentUpon>StorageIn_IQC_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_MCReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_MCReturn.designer.cs">
+      <DependentUpon>StorageIn_MCReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_101Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_101Location_Split.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_101Location_Split.Designer.cs">
+      <DependentUpon>StorageIn_OnLineIn_101Location_Split.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SemiProduct_OnLineIn_BP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SemiProduct_OnLineIn_BP.Designer.cs">
+      <DependentUpon>StorageIn_SemiProduct_OnLineIn_BP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SemiProduct_OnLineIn_PU6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SemiProduct_OnLineIn_PU6.Designer.cs">
+      <DependentUpon>StorageIn_SemiProduct_OnLineIn_PU6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_CYC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_CYC.Designer.cs">
+      <DependentUpon>InventoryCheck_CYC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_BatchImportPartNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_BatchImportPartNo.Designer.cs">
+      <DependentUpon>Admin_BatchImportPartNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DateCodeStockTimeDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DateCodeStockTimeDefine.Designer.cs">
+      <DependentUpon>Admin_DateCodeStockTimeDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DateCodeExtendStockTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DateCodeExtendStockTime.Designer.cs">
+      <DependentUpon>Admin_DateCodeExtendStockTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAdd.Designer.cs">
+      <DependentUpon>Admin_DocumentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAddQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAddQty.Designer.cs">
+      <DependentUpon>Admin_DocumentAddQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAddQty_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAddQty_Modify.Designer.cs">
+      <DependentUpon>Admin_DocumentAddQty_Modify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAddQty_Show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_DocumentAddQty_Show.Designer.cs">
+      <DependentUpon>Admin_DocumentAddQty_Show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_Material_personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_Material_personnel.Designer.cs">
+      <DependentUpon>Admin_Material_personnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_ReportAddresseeDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_ReportAddresseeDefine.Designer.cs">
+      <DependentUpon>Admin_ReportAddresseeDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine_AddJIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine_AddJIT.Designer.cs">
+      <DependentUpon>Admin_StorageDefine_AddJIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine_JIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine_JIT.Designer.cs">
+      <DependentUpon>Admin_StorageDefine_JIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageSelect.Designer.cs">
+      <DependentUpon>Admin_StorageSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_Barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_Barcode.Designer.cs">
+      <DependentUpon>InventoryCheck_Barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_LocationScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_LocationScan.Designer.cs">
+      <DependentUpon>InventoryCheck_LocationScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\IQCBorrowMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\IQCBorrowMaterials.Designer.cs">
+      <DependentUpon>IQCBorrowMaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\IQCBorrowMaterials_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\IQCBorrowMaterials_Add.Designer.cs">
+      <DependentUpon>IQCBorrowMaterials_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\MatainMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\MatainMail.Designer.cs">
+      <DependentUpon>MatainMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm_Version.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_Version.Designer.cs">
+      <DependentUpon>MainForm_Version.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MaintainModelBaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\MaintainModelBaseInfo.Designer.cs">
+      <DependentUpon>MaintainModelBaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelBaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\ModelBaseInfo.Designer.cs">
+      <DependentUpon>ModelBaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_CreateTransferOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_CreateTransferOrder.Designer.cs">
+      <DependentUpon>Model_CreateTransferOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_InventoryCheck_StorageQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_InventoryCheck_StorageQuery.Designer.cs">
+      <DependentUpon>Model_InventoryCheck_StorageQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_InventoryQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_InventoryQuery.Designer.cs">
+      <DependentUpon>Model_InventoryQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_LocationCombine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_LocationCombine.designer.cs">
+      <DependentUpon>Model_LocationCombine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_LocationCombine_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_LocationCombine_Detail.designer.cs">
+      <DependentUpon>Model_LocationCombine_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_Manage_LogQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_Manage_LogQuery.Designer.cs">
+      <DependentUpon>Model_Manage_LogQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_ModelNoSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_ModelNoSelect.Designer.cs">
+      <DependentUpon>Model_ModelNoSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_OrderSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_OrderSelect.Designer.cs">
+      <DependentUpon>Model_OrderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_QueryTransferOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_QueryTransferOrder.Designer.cs">
+      <DependentUpon>Model_QueryTransferOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_StorageIn_OffLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_StorageIn_OffLineIn.designer.cs">
+      <DependentUpon>Model_StorageIn_OffLineIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_StorageOut_OffLineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_StorageOut_OffLineOut.designer.cs">
+      <DependentUpon>Model_StorageOut_OffLineOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_StrorageIn_OffLineIn_BatchImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_StrorageIn_OffLineIn_BatchImport.Designer.cs">
+      <DependentUpon>Model_StrorageIn_OffLineIn_BatchImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_TransferIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_TransferIn.Designer.cs">
+      <DependentUpon>Model_TransferIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_TransferOrderReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_TransferOrderReturn.Designer.cs">
+      <DependentUpon>Model_TransferOrderReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_TransferOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Model_TransferOut.Designer.cs">
+      <DependentUpon>Model_TransferOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StorageIn_LocationSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Film_OutMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Film_OutMaterial.Designer.cs">
+      <DependentUpon>StorageOut_Film_OutMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_MergingBox_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_MergingBox_Print.Designer.cs">
+      <DependentUpon>StorageOut_MergingBox_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAD\Pad_CarMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAD\Pad_CarMaintain.Designer.cs">
+      <DependentUpon>Pad_CarMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAD\Pad_CountingProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAD\Pad_CountingProgress.designer.cs">
+      <DependentUpon>Pad_CountingProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAD\Pad_IssueProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAD\Pad_MaterialPrepare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAD\Pad_MaterialPrepare.Designer.cs">
+      <DependentUpon>Pad_MaterialPrepare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAD\Pad_UnbindIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAD\Pad_UserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPrint.Designer.cs">
+      <DependentUpon>ReportPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\ContrastReportBarcode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContrastReportBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\CountingLabelLocatReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountingLabelLocatReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Content Include="lib\clsZRFC_INSERT_SMT_DEMANDN.dll" />
+    <Content Include="lib\CommonObjects.dll" />
+    <Content Include="lib\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="lib\CrystalDecisions.ReportSource.dll" />
+    <Content Include="lib\CrystalDecisions.Shared.dll" />
+    <Content Include="lib\CrystalDecisions.Windows.Forms.dll" />
+    <Content Include="lib\ECMS.CommonLibrary.dll" />
+    <Content Include="lib\librfc32.dll" />
+    <Content Include="lib\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="lib\NPOI.dll" />
+    <Content Include="lib\NPOI.OOXML.dll" />
+    <Content Include="lib\NPOI.OpenXml4Net.dll" />
+    <Content Include="lib\NPOI.OpenXmlFormats.dll" />
+    <Content Include="lib\SAP.Connector.dll" />
+    <Content Include="lib\SAP.Connector.Rfc.dll" />
+    <Content Include="lib\ZRFC_311_AUTO_RETURN.dll" />
+    <Content Include="lib\ZRFC_GET_SMT_STOCK.dll" />
+    <Content Include="lib\ZRFC_WO_AUTO_GR.dll" />
+    <Content Include="lib\Z_RFC_QMS_AUTO_RETURN_318.dll" />
+    <Content Include="lib\Z_RFC_QMS_STOCK_318.dll" />
+    <Content Include="report\BarCode.txt" />
+    <Content Include="report\CountingLocationAllReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountingLocationAllReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Content>
+    <Compile Include="report\FilmOutReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FilmOutReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\LogReport_LineInfo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogReport_LineInfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\ModelLocationReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelLocationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\ModelOrderReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelOrderReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\ModelStorageOutHeaderReport.cs">
+      <DependentUpon>ModelStorageOutHeaderReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\ModelStorageOutOffLine.cs">
+      <DependentUpon>ModelStorageOutOffLine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\Real_time_peding_query.cs">
+      <DependentUpon>Real_time_peding_query.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\ScrapPacking1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScrapPacking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreIn_SplitLocation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreIn_SplitLocation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreOutReport_DateCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreOutReport_DateCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreOutReport_Groupid.cs">
+      <DependentUpon>StoreOutReport_Groupid.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\StoreOutReport_LineInfoByLine.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreOutReport_LineInfoByLine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreOutReport_LineInfoByLine_Thermalpaper.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreOutReport_LineInfoByLine_Thermalpaper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreOutReport_LineInfoByMaterial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreOutReport_LineInfoByMaterial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreOutReport_PalletIDLabel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreOutReport_PalletIDLabel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreOutReport_Reprint.cs">
+      <DependentUpon>StoreOutReport_Reprint.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\LocationScan.cs">
+      <DependentUpon>LocationScan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_Document_Compare_DoubleCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_Document_Compare_DoubleCheck.Designer.cs">
+      <DependentUpon>StorageIn_EC_Document_Compare_DoubleCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_Document_Compare_OverShipped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_Document_Compare_OverShipped.Designer.cs">
+      <DependentUpon>StorageIn_EC_Document_Compare_OverShipped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_Document_Compare_ShortShipped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_Document_Compare_ShortShipped.Designer.cs">
+      <DependentUpon>StorageIn_EC_Document_Compare_ShortShipped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC.Designer.cs">
+      <DependentUpon>StorageIn_IQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_InOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_InOut.Designer.cs">
+      <DependentUpon>StorageIn_IQC_InOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_InOut_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_IQC_InOut_Add.Designer.cs">
+      <DependentUpon>StorageIn_IQC_InOut_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_DOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_DOA.Designer.cs">
+      <DependentUpon>StorageIn_OnLineIn_DOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_Return.Designer.cs">
+      <DependentUpon>StorageIn_OnLineIn_Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Pallet_PlasticMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Pallet_PlasticMaterial.Designer.cs">
+      <DependentUpon>StorageIn_Pallet_PlasticMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SapDataSelect_Rmano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SapDataSelect_Rmano.Designer.cs">
+      <DependentUpon>StorageIn_SapDataSelect_Rmano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SemiProduct_OnLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_DOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_DOA.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_DOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_PlasticMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_PlasticMaterial.Designer.cs">
+      <DependentUpon>StorageOut_PlasticMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_PlasticMaterials_BatchImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_PlasticMaterials_BatchImport.Designer.cs">
+      <DependentUpon>StorageOut_PlasticMaterials_BatchImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_QMS_Dispatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_QMS_Dispatch.Designer.cs">
+      <DependentUpon>StorageOut_QMS_Dispatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm_VersionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="report\AccessConfig.cs">
+      <SubType>Code</SubType>
+    </Content>
+    <Compile Include="MAAUT\Admin_FixMaterialMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_FixMaterialMap.Designer.cs">
+      <DependentUpon>Admin_FixMaterialMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_LocationBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_LocationBlock.Designer.cs">
+      <DependentUpon>Admin_LocationBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_LocationDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_LocationDefine.Designer.cs">
+      <DependentUpon>Admin_LocationDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_MixedMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_MixedMaterial.Designer.cs">
+      <DependentUpon>Admin_MixedMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_MixedMaterial_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_MixedMaterial_Add.Designer.cs">
+      <DependentUpon>Admin_MixedMaterial_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_OldDataDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_OldDataDelete.Designer.cs">
+      <DependentUpon>Admin_OldDataDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_PartNoDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_PartNoDefine.designer.cs">
+      <DependentUpon>Admin_PartNoDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_PlantDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_PlantDefine.Designer.cs">
+      <DependentUpon>Admin_PlantDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine.Designer.cs">
+      <DependentUpon>Admin_StorageDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_StorageDefine_Add.Designer.cs">
+      <DependentUpon>Admin_StorageDefine_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_UserMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_UserMaintenance.Designer.cs">
+      <DependentUpon>Admin_UserMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAUT\Admin_UserMaintenance_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAUT\Admin_UserMaintenance_List.Designer.cs">
+      <DependentUpon>Admin_UserMaintenance_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_AdjustData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_AdjustData.Designer.cs">
+      <DependentUpon>InventoryCheck_AdjustData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_AdjustData_Qty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_AdjustData_Qty.Designer.cs">
+      <DependentUpon>InventoryCheck_AdjustData_Qty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_PrepareProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_PrepareProcess.Designer.cs">
+      <DependentUpon>InventoryCheck_PrepareProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_StorageChangeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_StorageChangeQuery.Designer.cs">
+      <DependentUpon>InventoryCheck_StorageChangeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_StorageQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVAUT\InventoryCheck_StorageQuery.Designer.cs">
+      <DependentUpon>InventoryCheck_StorageQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_MDI_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="report\ContrastReport.cs">
+      <DependentUpon>ContrastReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\ContrastReportWithDocument.cs">
+      <DependentUpon>ContrastReportWithDocument.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\CountingAdjustReport.cs">
+      <DependentUpon>CountingAdjustReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\CountingLabelReport.cs">
+      <DependentUpon>CountingLabelReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\CountingLocationReport.cs">
+      <DependentUpon>CountingLocationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\CountingPrepareReport.cs">
+      <DependentUpon>CountingPrepareReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\DetailCountingReport.cs">
+      <DependentUpon>DetailCountingReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\DetailReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetailReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\DetailReport_DateCode.cs">
+      <DependentUpon>DetailReport_DateCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\FINALDataReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FINALDataReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\FixedLocationReport.cs">
+      <DependentUpon>FixedLocationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\LocationReport.cs">
+      <DependentUpon>LocationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\LogReport.cs">
+      <DependentUpon>LogReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\ReplenishDetailReport.cs">
+      <DependentUpon>ReplenishDetailReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\ReplenishOutReport1.cs">
+      <DependentUpon>ReplenishOutReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\ReplenishReport.cs">
+      <DependentUpon>ReplenishReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\ReplenishSummaryReport1.cs">
+      <DependentUpon>ReplenishSummaryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\SMTDataReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMTDataReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\StoreInReport_DateCode.cs">
+      <DependentUpon>StoreInReport_DateCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\StoreOutHeaderReport.cs">
+      <DependentUpon>StoreOutHeaderReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\StoreOutReport.cs">
+      <DependentUpon>StoreOutReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\StoreOutReport_DateCode_New.cs">
+      <DependentUpon>StoreOutReport_DateCode_New.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\StoreOutReport_Picasso.cs">
+      <DependentUpon>StoreOutReport_Picasso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\SummaryReport.cs">
+      <DependentUpon>SummaryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="report\SimulationDocListReport.cs">
+      <DependentUpon>SimulationDocListReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\StoreOutReport_Product.cs">
+      <DependentUpon>StoreOutReport_Product.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\StoreOutReport_DateCode_Summary.cs">
+      <DependentUpon>StoreOutReport_DateCode_Summary.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\StoreOutReport_SpareParts.cs">
+      <DependentUpon>StoreOutReport_SpareParts.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\DetailReport_SpareParts.cs">
+      <DependentUpon>DetailReport_SpareParts.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\FinalGroupIdReport.cs">
+      <DependentUpon>FinalGroupIdReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\SMTGroupIdReport.cs">
+      <DependentUpon>SMTGroupIdReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="report\TransferOut303.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferOut303.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\TransferOut313.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferOut313.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\TransferOut351.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferOut351.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\TransferOut60S.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransferOut60S.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\WasteReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WasteReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\Waste_Print_Detail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Waste_Print_Detail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\OAMM\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="INAUT\StorageIn_CombineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_EC_Document_Compare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_GoodReceiptReport_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_LocationSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_LocationSelect_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_LocationSelect_Picasso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn_SpareParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn_SpareParts.Designer.cs">
+      <DependentUpon>StorageIn_OffLineIn_SpareParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn_SpareParts_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn_SpareParts_Add.Designer.cs">
+      <DependentUpon>StorageIn_OffLineIn_SpareParts_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_AddPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_DateCode_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_GR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_GR_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_Picasso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_Picasso_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Add.Designer.cs">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Automatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Automatic.Designer.cs">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Automatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Hub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Hub.Designer.cs">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Hub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OnLineIn_SpareParts_Manual.Designer.cs">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Pallet_OnLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Product _OffLineIn_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Product_OffLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_Product_OnLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SapDataSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SapDataSelectPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_OnLineIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_OnLineIn_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_Query_RefID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_Return.Designer.cs">
+      <DependentUpon>StorageIn_SMT_Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_Return_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_SMT_Return_Add.Designer.cs">
+      <DependentUpon>StorageIn_SMT_Return_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_TransferIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_TransferIn_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_CombineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_GoodIssueReport_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_LocateOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_LocateOut_ModifyQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_LocationSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OffLineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OffLineOut_SpareParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OffLineOut_SpareParts.designer.cs">
+      <DependentUpon>StorageOut_OffLineOut_SpareParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_Picasso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_Plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SimulationOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SimulationOut.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_SimulationOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SpareParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SpareParts.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_SpareParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SpareParts_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_SpareParts_Modify.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_SpareParts_Modify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_TwoPhaseConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_TwoPhaseConfirm.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_TwoPhaseConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_TwoPhaseConfirm_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_TwoPhaseConfirm_Modify.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_TwoPhaseConfirm_Modify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_TwoPhaseOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_OnLineOut_TwoPhaseOut.Designer.cs">
+      <DependentUpon>StorageOut_OnLineOut_TwoPhaseOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_PartSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Product_OffLineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Product_OnLineOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Product_OnLineOut_PDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Product_OnLineOut_PDA.Designer.cs">
+      <DependentUpon>StorageOut_Product_OnLineOut_PDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Produce_SimulationDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_Produce_SimulationDocument.Designer.cs">
+      <DependentUpon>StorageOut_Produce_SimulationDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SapDataSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SapDataSelectLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SAP_Simulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SAP_Simulation.Designer.cs">
+      <DependentUpon>StorageOut_SAP_Simulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SDSDataSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SpareParts_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SpareParts_Add.designer.cs">
+      <DependentUpon>StorageOut_SpareParts_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SpareParts_Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_SpareParts_Confirm.Designer.cs">
+      <DependentUpon>StorageOut_SpareParts_Confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_StorageOut_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_StorageOut_Auto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_StorageOut_Product_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_TransferOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTAUT\StorageOut_TransferOut_DateCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn_BatchImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INAUT\StorageIn_OffLineIn_BatchImport.Designer.cs">
+      <DependentUpon>StorageIn_OffLineIn_BatchImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\TransferData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferData.Designer.cs">
+      <DependentUpon>TransferData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\TransferIn_101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferIn_101.Designer.cs">
+      <DependentUpon>TransferIn_101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Print.Designer.cs">
+      <DependentUpon>TransferOut_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Query.Designer.cs">
+      <DependentUpon>TransferOut_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Upload_313_303.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Upload_313_303.Designer.cs">
+      <DependentUpon>TransferOut_Upload_313_303.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Upload_351_60S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferOut_Upload_351_60S.Designer.cs">
+      <DependentUpon>TransferOut_Upload_351_60S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\Transfer_ApplyForCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\Transfer_ApplyForCar.Designer.cs">
+      <DependentUpon>Transfer_ApplyForCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\Transfer_InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\Transfer_InputBox.Designer.cs">
+      <DependentUpon>Transfer_InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\Transfer_LocationSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\Transfer_LocationSelect.Designer.cs">
+      <DependentUpon>Transfer_LocationSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\Transfer_LocationSelectBymblnr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\Transfer_LocationSelectBymblnr.Designer.cs">
+      <DependentUpon>Transfer_LocationSelectBymblnr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer\Transfer_MblnrSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\Transfer_MblnrSelect.Designer.cs">
+      <DependentUpon>Transfer_MblnrSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSystem.cs" />
+    <Compile Include="Web References\BPMTIC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\iworkflow\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MailService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MM\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MM_Test\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PP_Test\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WF\Reference.cs" />
+    <EmbeddedResource Include="AGV\CombineStock_AGV.resx">
+      <DependentUpon>CombineStock_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\InventoryCheck_RTime_AGV.resx">
+      <DependentUpon>InventoryCheck_RTime_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\Manage_IntelligentReceive_AGV.resx">
+      <DependentUpon>Manage_IntelligentReceive_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\StorageIn_AGV.resx">
+      <DependentUpon>StorageIn_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\StorageIn_Intelligent_AGV.resx">
+      <DependentUpon>StorageIn_Intelligent_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\StorageIn_SMT_MultiOnLineIn_AGV.resx">
+      <DependentUpon>StorageIn_SMT_MultiOnLineIn_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\StorageLocationQuery_AGV.resx">
+      <DependentUpon>StorageLocationQuery_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\StorageOut_OnlineOut_AGV.resx">
+      <DependentUpon>StorageOut_OnlineOut_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_LocationDefine.resx">
+      <DependentUpon>Alim_LocationDefine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_LogQuery.resx">
+      <DependentUpon>Alim_LogQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_Manage_LockPN.resx">
+      <DependentUpon>Alim_Manage_LockPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_MaterialSelect.resx">
+      <DependentUpon>Alim_MaterialSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_SapDataQuery.resx">
+      <DependentUpon>Alim_SapDataQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_SDSDataSelect.resx">
+      <DependentUpon>Alim_SDSDataSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageComparison.resx">
+      <DependentUpon>Alim_StorageComparison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageInMblnrSelect.resx">
+      <DependentUpon>Alim_StorageInMblnrSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageIn_Offline.resx">
+      <DependentUpon>Alim_StorageIn_Offline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageIn_Online.resx">
+      <DependentUpon>Alim_StorageIn_Online.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageIn_SMT_Return.resx">
+      <DependentUpon>Alim_StorageIn_SMT_Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageOut_Offline.resx">
+      <DependentUpon>Alim_StorageOut_Offline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageOut_OnLineOut_Add.resx">
+      <DependentUpon>Alim_StorageOut_OnLineOut_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageOut_SimulationOut.resx">
+      <DependentUpon>Alim_StorageOut_SimulationOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alim\Alim_StorageQuery.resx">
+      <DependentUpon>Alim_StorageQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAK\REPLN\Replenishment_ChangeReplenishStatus.resx">
+      <DependentUpon>Replenishment_ChangeReplenishStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAK\REPLN\Replenishment_ChangeReplenishStatus_Edit.resx">
+      <DependentUpon>Replenishment_ChangeReplenishStatus_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAK\REPLN\Replenishment_GenerateReplenishOrder.resx">
+      <DependentUpon>Replenishment_GenerateReplenishOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAK\REPLN\Replenishment_MaintainMapping.resx">
+      <DependentUpon>Replenishment_MaintainMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAK\REPLN\Replenishment_QueryReplenishData.resx">
+      <DependentUpon>Replenishment_QueryReplenishData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAK\REPLN\Replenishment_SetupMailNotice.resx">
+      <DependentUpon>Replenishment_SetupMailNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAK\REPLN\TransferMaintainMail.resx">
+      <DependentUpon>TransferMaintainMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECForm.resx">
+      <DependentUpon>ECForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\GBWMS_SemiProduct_OnlineOut.resx">
+      <DependentUpon>GBWMS_SemiProduct_OnlineOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Manage_LocationCombineCSMC.resx">
+      <DependentUpon>Manage_LocationCombineCSMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageIn_SemiProduct_OnLineIn_MultiPallet.resx">
+      <DependentUpon>StorageIn_SemiProduct_OnLineIn_MultiPallet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\IQCBorrowMaterials_Detail.resx">
+      <DependentUpon>IQCBorrowMaterials_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Intelligent_TWW.resx">
+      <DependentUpon>StorageIn_Intelligent_TWW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_QueryERRO.resx">
+      <DependentUpon>StorageIn_SMT_QueryERRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQC\IQC_OverDue_Inspect.resx">
+      <DependentUpon>IQC_OverDue_Inspect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQC\IQC_Overdue_Reinspection.resx">
+      <DependentUpon>IQC_Overdue_Reinspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQC\IQC_PrintExpDate.resx">
+      <DependentUpon>IQC_PrintExpDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQC\IQC_QueryOverdueInspect.resx">
+      <DependentUpon>IQC_QueryOverdueInspect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_DateCodeRuleDefine.resx">
+      <DependentUpon>Admin_DateCodeRuleDefine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_LocationPrint.resx">
+      <DependentUpon>Admin_LocationPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_DateCodeTimeQuery.resx">
+      <DependentUpon>Manage_DateCodeTimeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_EmptyLocation.resx">
+      <DependentUpon>Manage_EmptyLocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_HoldInformation.resx">
+      <DependentUpon>Manage_HoldInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_ImportInventory.resx">
+      <DependentUpon>Manage_ImportInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_InitialTimeOf46PO.resx">
+      <DependentUpon>Manage_InitialTimeOf46PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_IntelligentReceive.resx">
+      <DependentUpon>Manage_IntelligentReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_IQC_BadDataPrint.resx">
+      <DependentUpon>Manage_IQC_BadDataPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationChange.resx">
+      <DependentUpon>Manage_LocationChange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationCombine.resx">
+      <DependentUpon>Manage_LocationCombine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationCombine_Detail.resx">
+      <DependentUpon>Manage_LocationCombine_Detail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationCombine_DetailCSMC.resx">
+      <DependentUpon>Manage_LocationCombine_DetailCSMC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationMaintenance.resx">
+      <DependentUpon>Manage_LocationMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationMaintenance_Add.resx">
+      <DependentUpon>Manage_LocationMaintenance_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationMaintenance_AddMixed.resx">
+      <DependentUpon>Manage_LocationMaintenance_AddMixed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationMaintenance_Query.resx">
+      <DependentUpon>Manage_LocationMaintenance_Query.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationMaintenance_QueryModify.resx">
+      <DependentUpon>Manage_LocationMaintenance_QueryModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationPallet.resx">
+      <DependentUpon>Manage_LocationPallet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationPallet_Info.resx">
+      <DependentUpon>Manage_LocationPallet_Info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationSelect.resx">
+      <DependentUpon>Manage_LocationSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LocationSelect_New.resx">
+      <DependentUpon>Manage_LocationSelect_New.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_LogQuery.resx">
+      <DependentUpon>Manage_LogQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_MaterialConvertPrint.resx">
+      <DependentUpon>Manage_MaterialConvertPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_MaterialConvertSelect.resx">
+      <DependentUpon>Manage_MaterialConvertSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_MaterialSelect.resx">
+      <DependentUpon>Manage_MaterialSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_PalletCombine.resx">
+      <DependentUpon>Manage_PalletCombine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_PalletQtyMaintain.resx">
+      <DependentUpon>Manage_PalletQtyMaintain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_PalletQuery.resx">
+      <DependentUpon>Manage_PalletQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_PalletSplit.resx">
+      <DependentUpon>Manage_PalletSplit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_PrintReLabel.resx">
+      <DependentUpon>Manage_PrintReLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_Real_time_pending_query.resx">
+      <DependentUpon>Manage_Real_time_pending_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_ReceivePlatform.resx">
+      <DependentUpon>Manage_ReceivePlatform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_ReceivePlatformReport.resx">
+      <DependentUpon>Manage_ReceivePlatformReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_RefidSelect.resx">
+      <DependentUpon>Manage_RefidSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_ResellInventory_Query.resx">
+      <DependentUpon>Manage_ResellInventory_Query.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SapDataQuery.resx">
+      <DependentUpon>Manage_SapDataQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SapDocumentNo.resx">
+      <DependentUpon>Manage_SapDocumentNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SapSimulationDataPrint.resx">
+      <DependentUpon>Manage_SapSimulationDataPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SapSimulationDataPrint_Split.resx">
+      <DependentUpon>Manage_SapSimulationDataPrint_Split.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SapSimulationDataQuery.resx">
+      <DependentUpon>Manage_SapSimulationDataQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_ScrapPackingQuery.resx">
+      <DependentUpon>Manage_ScrapPackingQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SimulationOutQuery.resx">
+      <DependentUpon>Manage_SimulationOutQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SparePartsDocmentQuery.resx">
+      <DependentUpon>Manage_SparePartsDocmentQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_SparePartsStorageQuery.resx">
+      <DependentUpon>Manage_SparePartsStorageQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageBatchDown.resx">
+      <DependentUpon>Manage_StorageBatchDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageComparison.resx">
+      <DependentUpon>Manage_StorageComparison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageContrast.resx">
+      <DependentUpon>Manage_StorageContrast.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageContrastWithDocument.resx">
+      <DependentUpon>Manage_StorageContrastWithDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageQuery.resx">
+      <DependentUpon>Manage_StorageQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageQuery_DateCode.resx">
+      <DependentUpon>Manage_StorageQuery_DateCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageQuery_PCBA.resx">
+      <DependentUpon>Manage_StorageQuery_PCBA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageStatus.resx">
+      <DependentUpon>Manage_StorageStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageStatus_Detail.resx">
+      <DependentUpon>Manage_StorageStatus_Detail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageStatus_SetupRowCloumn.resx">
+      <DependentUpon>Manage_StorageStatus_SetupRowCloumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_StorageTimeQuery.resx">
+      <DependentUpon>Manage_StorageTimeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_TransferProgress_Query.resx">
+      <DependentUpon>Manage_TransferProgress_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Manage_WasteMaintainStorage.resx">
+      <DependentUpon>Manage_WasteMaintainStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Mange_DateCodeRule.resx">
+      <DependentUpon>Mange_DateCodeRule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Mange_DateCodeRule_Pop.resx">
+      <DependentUpon>Mange_DateCodeRule_Pop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Mange_Reflesh_Stock.resx">
+      <DependentUpon>Mange_Reflesh_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Mange_SNTOQMS.resx">
+      <DependentUpon>Mange_SNTOQMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGAUT\Online_EC_Copare.resx">
+      <DependentUpon>Online_EC_Copare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\StorageOut_OnlineOut_SimulationOut_AGV.resx">
+      <DependentUpon>StorageOut_OnlineOut_SimulationOut_AGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_SimulationOut_DateCode.resx">
+      <DependentUpon>StorageOut_OnLineOut_SimulationOut_DateCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_Transfer_311.resx">
+      <DependentUpon>StorageOut_OnLineOut_Transfer_311.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnlineOut_TWW.resx">
+      <DependentUpon>StorageOut_OnlineOut_TWW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnlineOut_TWW_Edit.resx">
+      <DependentUpon>StorageOut_OnlineOut_TWW_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AGV\StorageOut_SimulationScan_AGV.resx">
+      <DependentUpon>StorageOut_SimulationScan_AGV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="report\StoreOutReportCFG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReportCFG.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Transfer\TransferIn_101_Split.resx">
+      <DependentUpon>TransferIn_101_Split.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePassword.resx">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\AddTruckOrder.resx">
+      <DependentUpon>AddTruckOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Admin_CarInfo.resx">
+      <DependentUpon>Admin_CarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Admin_PortAdd.resx">
+      <DependentUpon>Admin_PortAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\GBWMS_SemiProduct_TransferOut.resx">
+      <DependentUpon>GBWMS_SemiProduct_TransferOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\InventryContrastbyStorageLocation.resx">
+      <DependentUpon>InventryContrastbyStorageLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\IQCBorrowMaterial_BorrowMaterial.resx">
+      <DependentUpon>IQCBorrowMaterial_BorrowMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\IQCBorrowMaterial_HistoricalQuery.resx">
+      <DependentUpon>IQCBorrowMaterial_HistoricalQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\IQCBorrowMaterial_ReturnMaterial.resx">
+      <DependentUpon>IQCBorrowMaterial_ReturnMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Manage_IssueProgressQuery.resx">
+      <DependentUpon>Manage_IssueProgressQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageIn_EC.resx">
+      <DependentUpon>StorageIn_EC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageIn_LocationSelectCSMC.resx">
+      <DependentUpon>StorageIn_LocationSelectCSMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageIn_QueryEC.resx">
+      <DependentUpon>StorageIn_QueryEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageIn_SemiProduct_OnLineInNew.resx">
+      <DependentUpon>StorageIn_SemiProduct_OnLineInNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageOut_AddDoc.resx">
+      <DependentUpon>StorageOut_AddDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageOut_AddDocQuery.resx">
+      <DependentUpon>StorageOut_AddDocQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\StorageOut_SemiProductOut.resx">
+      <DependentUpon>StorageOut_SemiProductOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferInGuardConfirm.resx">
+      <DependentUpon>TransferInGuardConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferInMTConfirm.resx">
+      <DependentUpon>TransferInMTConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferInWHReceive.resx">
+      <DependentUpon>TransferInWHReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferIn_SapDataSelect.resx">
+      <DependentUpon>TransferIn_SapDataSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferOutGuardConfirm.resx">
+      <DependentUpon>TransferOutGuardConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferOutWHConfirm.resx">
+      <DependentUpon>TransferOutWHConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferOut_OnPassage_Query.resx">
+      <DependentUpon>TransferOut_OnPassage_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferOut_SemiProduct_Confirm.resx">
+      <DependentUpon>TransferOut_SemiProduct_Confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\TransferOut_SemiProduct_Query.resx">
+      <DependentUpon>TransferOut_SemiProduct_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Transfer_46PO.resx">
+      <DependentUpon>Transfer_46PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Transfer_AdditionalPrint.resx">
+      <DependentUpon>Transfer_AdditionalPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Transfer_BindCarInfo.resx">
+      <DependentUpon>Transfer_BindCarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Transfer_BindPortInfo.resx">
+      <DependentUpon>Transfer_BindPortInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Transfer_Query.resx">
+      <DependentUpon>Transfer_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GBWMS\Transfer_SemiProductIn.resx">
+      <DependentUpon>Transfer_SemiProductIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_EC_DateCode.resx">
+      <DependentUpon>StorageIn_EC_DateCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Intelligent.resx">
+      <DependentUpon>StorageIn_Intelligent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_IQC_InNew.resx">
+      <DependentUpon>StorageIn_IQC_InNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_IQC_Query.resx">
+      <DependentUpon>StorageIn_IQC_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_IQC_REJECT.resx">
+      <DependentUpon>StorageIn_IQC_REJECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_MCReturn.resx">
+      <DependentUpon>StorageIn_MCReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_101Location.resx">
+      <DependentUpon>StorageIn_OnLineIn_101Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_101Location_Split.resx">
+      <DependentUpon>StorageIn_OnLineIn_101Location_Split.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Pallet_MultiOnLineIn.resx">
+      <DependentUpon>StorageIn_Pallet_MultiOnLineIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SemiProduct_OnLineIn_BP.resx">
+      <DependentUpon>StorageIn_SemiProduct_OnLineIn_BP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SemiProduct_OnLineIn_PU6.resx">
+      <DependentUpon>StorageIn_SemiProduct_OnLineIn_PU6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_MultiOnLineIn.resx">
+      <DependentUpon>StorageIn_SMT_MultiOnLineIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_Query_RefIDLocat.resx">
+      <DependentUpon>StorageIn_SMT_Query_RefIDLocat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_CYC.resx">
+      <DependentUpon>InventoryCheck_CYC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_InvContent.resx">
+      <DependentUpon>InventoryCheck_InvContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_PreProgresses.resx">
+      <DependentUpon>InventoryCheck_PreProgresses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_ProgressQuery.resx">
+      <DependentUpon>InventoryCheck_ProgressQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_RTime.resx">
+      <DependentUpon>InventoryCheck_RTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_BatchImportPartNo.resx">
+      <DependentUpon>Admin_BatchImportPartNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_DateCodeStockTimeDefine.resx">
+      <DependentUpon>Admin_DateCodeStockTimeDefine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_DateCodeExtendStockTime.resx">
+      <DependentUpon>Admin_DateCodeExtendStockTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_DocumentAdd.resx">
+      <DependentUpon>Admin_DocumentAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_DocumentAddQty.resx">
+      <DependentUpon>Admin_DocumentAddQty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_DocumentAddQty_Modify.resx">
+      <DependentUpon>Admin_DocumentAddQty_Modify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_DocumentAddQty_Show.resx">
+      <DependentUpon>Admin_DocumentAddQty_Show.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_FixMaterialMap.resx">
+      <DependentUpon>Admin_FixMaterialMap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_Intelligent_personnel.resx">
+      <DependentUpon>Admin_Intelligent_personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_LocationBlock.resx">
+      <DependentUpon>Admin_LocationBlock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_LocationDefine.resx">
+      <DependentUpon>Admin_LocationDefine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_Material_personnel.resx">
+      <DependentUpon>Admin_Material_personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_MixedMaterial.resx">
+      <DependentUpon>Admin_MixedMaterial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_MixedMaterial_Add.resx">
+      <DependentUpon>Admin_MixedMaterial_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_OldDataDelete.resx">
+      <DependentUpon>Admin_OldDataDelete.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_PartNoDefine.resx">
+      <DependentUpon>Admin_PartNoDefine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_PlantDefine.resx">
+      <DependentUpon>Admin_PlantDefine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_ReportAddresseeDefine.resx">
+      <DependentUpon>Admin_ReportAddresseeDefine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_StorageDefine.resx">
+      <DependentUpon>Admin_StorageDefine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_StorageDefine_Add.resx">
+      <DependentUpon>Admin_StorageDefine_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_StorageDefine_AddJIT.resx">
+      <DependentUpon>Admin_StorageDefine_AddJIT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_StorageDefine_JIT.resx">
+      <DependentUpon>Admin_StorageDefine_JIT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_StorageSelect.resx">
+      <DependentUpon>Admin_StorageSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_UserMaintenance.resx">
+      <DependentUpon>Admin_UserMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\Admin_UserMaintenance_List.resx">
+      <DependentUpon>Admin_UserMaintenance_List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_Barcode.resx">
+      <DependentUpon>InventoryCheck_Barcode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_LocationScan.resx">
+      <DependentUpon>InventoryCheck_LocationScan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\IQCBorrowMaterials.resx">
+      <DependentUpon>IQCBorrowMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\IQCBorrowMaterials_Add.resx">
+      <DependentUpon>IQCBorrowMaterials_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAUT\MatainMail.resx">
+      <DependentUpon>MatainMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_Version.resx">
+      <DependentUpon>MainForm_Version.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\MaintainModelBaseInfo.resx">
+      <DependentUpon>MaintainModelBaseInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\ModelBaseInfo.resx">
+      <DependentUpon>ModelBaseInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_CreateTransferOrder.resx">
+      <DependentUpon>Model_CreateTransferOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_InventoryCheck_StorageQuery.resx">
+      <DependentUpon>Model_InventoryCheck_StorageQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_InventoryQuery.resx">
+      <DependentUpon>Model_InventoryQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_LocationCombine.resx">
+      <DependentUpon>Model_LocationCombine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_LocationCombine_Detail.resx">
+      <DependentUpon>Model_LocationCombine_Detail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_Manage_LogQuery.resx">
+      <DependentUpon>Model_Manage_LogQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_ModelNoSelect.resx">
+      <DependentUpon>Model_ModelNoSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_OrderSelect.resx">
+      <DependentUpon>Model_OrderSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_QueryTransferOrder.resx">
+      <DependentUpon>Model_QueryTransferOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_StorageIn_OffLineIn.resx">
+      <DependentUpon>Model_StorageIn_OffLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_StorageOut_OffLineOut.resx">
+      <DependentUpon>Model_StorageOut_OffLineOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_StrorageIn_OffLineIn_BatchImport.resx">
+      <DependentUpon>Model_StrorageIn_OffLineIn_BatchImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_TransferIn.resx">
+      <DependentUpon>Model_TransferIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_TransferOrderReturn.resx">
+      <DependentUpon>Model_TransferOrderReturn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Model_TransferOut.resx">
+      <DependentUpon>Model_TransferOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\StorageIn_LocationSelect.resx">
+      <DependentUpon>StorageIn_LocationSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_Film_OutMaterial.resx">
+      <DependentUpon>StorageOut_Film_OutMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_MergingBox_Print.resx">
+      <DependentUpon>StorageOut_MergingBox_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAD\Pad_CarMaintain.resx">
+      <DependentUpon>Pad_CarMaintain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAD\Pad_CountingProgress.resx">
+      <DependentUpon>Pad_CountingProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAD\Pad_IssueProgress.resx">
+      <DependentUpon>Pad_IssueProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAD\Pad_MaterialPrepare.resx">
+      <DependentUpon>Pad_MaterialPrepare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAD\Pad_UnbindIssue.resx">
+      <DependentUpon>Pad_UnbindIssue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAD\Pad_UserAccount.resx">
+      <DependentUpon>Pad_UserAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="report\ContrastReportBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContrastReportBarcode.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\CountingLabelLocatReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CountingLabelLocatReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\CountingLocationAllReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CountingLocationAllReport1.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\FilmOutReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FilmOutReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\IQC_REJECT.txt" />
+    <Content Include="report\LogReport_LineInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LogReport_LineInfo.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\MaterialConvert_Model.txt" />
+    <Content Include="report\ModelLocationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ModelLocationReport1.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ModelOrderReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ModelOrderReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ModelStorageOutHeaderReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ModelStorageOutHeaderReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ModelStorageOutOffLine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ModelStorageOutOffLine.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\PPPrint_Model.txt">
+    </Content>
+    <Content Include="report\PrintReLabel.txt" />
+    <Content Include="report\Print_Label.txt" />
+    <Content Include="report\QuantaPN.txt" />
+    <Content Include="report\REJECT.txt" />
+    <Content Include="report\StoreOutReport_DateCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_DateCode.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_Groupid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_Groupid.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_LineInfoByLine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_LineInfoByLine.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_LineInfoByLine_Thermalpaper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_LineInfoByLine_Thermalpaper.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_LineInfoByMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_LineInfoByMaterial.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_PalletIDLabel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_PalletIDLabel.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_Reprint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_Reprint.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\LocationScan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LocationScan.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="INAUT\StorageIn_EC_Document_Compare_DoubleCheck.resx">
+      <DependentUpon>StorageIn_EC_Document_Compare_DoubleCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_EC_Document_Compare_OverShipped.resx">
+      <DependentUpon>StorageIn_EC_Document_Compare_OverShipped.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_EC_Document_Compare_ShortShipped.resx">
+      <DependentUpon>StorageIn_EC_Document_Compare_ShortShipped.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_IQC.resx">
+      <DependentUpon>StorageIn_IQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_IQC_InOut.resx">
+      <DependentUpon>StorageIn_IQC_InOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_IQC_InOut_Add.resx">
+      <DependentUpon>StorageIn_IQC_InOut_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_DOA.resx">
+      <DependentUpon>StorageIn_OnLineIn_DOA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_Return.resx">
+      <DependentUpon>StorageIn_OnLineIn_Return.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Pallet_PlasticMaterial.resx">
+      <DependentUpon>StorageIn_Pallet_PlasticMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SapDataSelect_Rmano.resx">
+      <DependentUpon>StorageIn_SapDataSelect_Rmano.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SemiProduct_OnLineIn.resx">
+      <DependentUpon>StorageIn_SemiProduct_OnLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_DOA.resx">
+      <DependentUpon>StorageOut_OnLineOut_DOA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_PlasticMaterial.resx">
+      <DependentUpon>StorageOut_PlasticMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_PlasticMaterials_BatchImport.resx">
+      <DependentUpon>StorageOut_PlasticMaterials_BatchImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_QMS_Dispatch.resx">
+      <DependentUpon>StorageOut_QMS_Dispatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_AdjustData.resx">
+      <DependentUpon>InventoryCheck_AdjustData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_AdjustData_Qty.resx">
+      <DependentUpon>InventoryCheck_AdjustData_Qty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_PrepareProcess.resx">
+      <DependentUpon>InventoryCheck_PrepareProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_StorageChangeQuery.resx">
+      <DependentUpon>InventoryCheck_StorageChangeQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVAUT\InventoryCheck_StorageQuery.resx">
+      <DependentUpon>InventoryCheck_StorageQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_ChangePassword.resx">
+      <DependentUpon>Login_ChangePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_Login.resx">
+      <DependentUpon>MainForm_Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_MDI_Login.resx">
+      <DependentUpon>MainForm_MDI_Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_VersionInfo.resx">
+      <DependentUpon>MainForm_VersionInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPrint.resx">
+      <DependentUpon>ReportPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="report\ContrastReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContrastReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ContrastReportWithDocument.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContrastReportWithDocument.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\CountingAdjustReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CountingAdjustReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\CountingLabelReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CountingLabelReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\CountingLocationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CountingLocationReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\CountingPrepareReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CountingPrepareReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\DetailCountingReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DetailCountingReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\DetailReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DetailReport.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="report\DetailReport_DateCode.resx">
+      <DependentUpon>DetailReport_DateCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="report\DetailReport_DateCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DetailReport_DateCode.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\FINALDataReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FINALDataReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\FixedLocationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FixedLocationReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\LocationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LocationReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\LogReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LogReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ReplenishDetailReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReplenishDetailReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ReplenishOutReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReplenishOutReport1.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ReplenishReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReplenishReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\ReplenishSummaryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReplenishSummaryReport1.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\SMTDataReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SMTDataReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreInReport_DateCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreInReport_DateCode.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutHeaderReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutHeaderReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_DateCode_New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_DateCode_New.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_Picasso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_Picasso.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\SummaryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SummaryReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\SimulationDocListReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SimulationDocListReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_Product.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_Product.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_DateCode_Summary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_DateCode_Summary.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreOutReport_SpareParts.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreOutReport_SpareParts.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\DetailReport_SpareParts.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DetailReport_SpareParts.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\FinalGroupIdReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinalGroupIdReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\SMTGroupIdReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SMTGroupIdReport.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="INAUT\StorageIn_CombineIn.resx">
+      <DependentUpon>StorageIn_CombineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_EC_Document_Compare.resx">
+      <DependentUpon>StorageIn_EC_Document_Compare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_GoodReceiptReport_Select.resx">
+      <DependentUpon>StorageIn_GoodReceiptReport_Select.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_LocationSelect.resx">
+      <DependentUpon>StorageIn_LocationSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_LocationSelect_DateCode.resx">
+      <DependentUpon>StorageIn_LocationSelect_DateCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_LocationSelect_Picasso.resx">
+      <DependentUpon>StorageIn_LocationSelect_Picasso.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OffLineIn.resx">
+      <DependentUpon>StorageIn_OffLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OffLineIn_Add.resx">
+      <DependentUpon>StorageIn_OffLineIn_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OffLineIn_SpareParts.resx">
+      <DependentUpon>StorageIn_OffLineIn_SpareParts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OffLineIn_SpareParts_Add.resx">
+      <DependentUpon>StorageIn_OffLineIn_SpareParts_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn.resx">
+      <DependentUpon>StorageIn_OnLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_Add.resx">
+      <DependentUpon>StorageIn_OnLineIn_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_AddPAL.resx">
+      <DependentUpon>StorageIn_OnLineIn_AddPAL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_Confirm.resx">
+      <DependentUpon>StorageIn_OnLineIn_Confirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_DateCode.resx">
+      <DependentUpon>StorageIn_OnLineIn_DateCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_DateCode_Add.resx">
+      <DependentUpon>StorageIn_OnLineIn_DateCode_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_GR.resx">
+      <DependentUpon>StorageIn_OnLineIn_GR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_GR_Add.resx">
+      <DependentUpon>StorageIn_OnLineIn_GR_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_Picasso.resx">
+      <DependentUpon>StorageIn_OnLineIn_Picasso.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_Picasso_Add.resx">
+      <DependentUpon>StorageIn_OnLineIn_Picasso_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_SpareParts_Add.resx">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_SpareParts_Automatic.resx">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Automatic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_SpareParts_Hub.resx">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Hub.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OnLineIn_SpareParts_Manual.resx">
+      <DependentUpon>StorageIn_OnLineIn_SpareParts_Manual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Pallet_OnLineIn.resx">
+      <DependentUpon>StorageIn_Pallet_OnLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Product _OffLineIn_Add.resx">
+      <DependentUpon>StorageIn_Product _OffLineIn_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Product_OffLineIn.resx">
+      <DependentUpon>StorageIn_Product_OffLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_Product_OnLineIn.resx">
+      <DependentUpon>StorageIn_Product_OnLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SapDataSelect.resx">
+      <DependentUpon>StorageIn_SapDataSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SapDataSelectPAL.resx">
+      <DependentUpon>StorageIn_SapDataSelectPAL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_OnLineIn.resx">
+      <DependentUpon>StorageIn_SMT_OnLineIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_OnLineIn_Add.resx">
+      <DependentUpon>StorageIn_SMT_OnLineIn_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_Query_RefID.resx">
+      <DependentUpon>StorageIn_SMT_Query_RefID.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_Return.resx">
+      <DependentUpon>StorageIn_SMT_Return.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_SMT_Return_Add.resx">
+      <DependentUpon>StorageIn_SMT_Return_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_TransferIn.resx">
+      <DependentUpon>StorageIn_TransferIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_TransferIn_DateCode.resx">
+      <DependentUpon>StorageIn_TransferIn_DateCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_CombineOut.resx">
+      <DependentUpon>StorageOut_CombineOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_GoodIssueReport_Select.resx">
+      <DependentUpon>StorageOut_GoodIssueReport_Select.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_LocateOut.resx">
+      <DependentUpon>StorageOut_LocateOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_LocateOut_ModifyQty.resx">
+      <DependentUpon>StorageOut_LocateOut_ModifyQty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_LocationSelect.resx">
+      <DependentUpon>StorageOut_LocationSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OffLineOut.resx">
+      <DependentUpon>StorageOut_OffLineOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OffLineOut_SpareParts.resx">
+      <DependentUpon>StorageOut_OffLineOut_SpareParts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut.resx">
+      <DependentUpon>StorageOut_OnLineOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_Confirm.resx">
+      <DependentUpon>StorageOut_OnLineOut_Confirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_DateCode.resx">
+      <DependentUpon>StorageOut_OnLineOut_DateCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_Picasso.resx">
+      <DependentUpon>StorageOut_OnLineOut_Picasso.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_Plan.resx">
+      <DependentUpon>StorageOut_OnLineOut_Plan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_SimulationOut.resx">
+      <DependentUpon>StorageOut_OnLineOut_SimulationOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_SpareParts.resx">
+      <DependentUpon>StorageOut_OnLineOut_SpareParts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_SpareParts_Modify.resx">
+      <DependentUpon>StorageOut_OnLineOut_SpareParts_Modify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_TwoPhaseConfirm.resx">
+      <DependentUpon>StorageOut_OnLineOut_TwoPhaseConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_TwoPhaseConfirm_Modify.resx">
+      <DependentUpon>StorageOut_OnLineOut_TwoPhaseConfirm_Modify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_OnLineOut_TwoPhaseOut.resx">
+      <DependentUpon>StorageOut_OnLineOut_TwoPhaseOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_PartSelect.resx">
+      <DependentUpon>StorageOut_PartSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_Product_OffLineOut.resx">
+      <DependentUpon>StorageOut_Product_OffLineOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_Product_OnLineOut.resx">
+      <DependentUpon>StorageOut_Product_OnLineOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_Product_OnLineOut_PDA.resx">
+      <DependentUpon>StorageOut_Product_OnLineOut_PDA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_Produce_SimulationDocument.resx">
+      <DependentUpon>StorageOut_Produce_SimulationDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_SapDataSelect.resx">
+      <DependentUpon>StorageOut_SapDataSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_SapDataSelectLocation.resx">
+      <DependentUpon>StorageOut_SapDataSelectLocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_SAP_Simulation.resx">
+      <DependentUpon>StorageOut_SAP_Simulation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_SDSDataSelect.resx">
+      <DependentUpon>StorageOut_SDSDataSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_SpareParts_Add.resx">
+      <DependentUpon>StorageOut_SpareParts_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_SpareParts_Confirm.resx">
+      <DependentUpon>StorageOut_SpareParts_Confirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_StorageOut_Add.resx">
+      <DependentUpon>StorageOut_StorageOut_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_StorageOut_Auto.resx">
+      <DependentUpon>StorageOut_StorageOut_Auto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_StorageOut_Product_Add.resx">
+      <DependentUpon>StorageOut_StorageOut_Product_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_TransferOut.resx">
+      <DependentUpon>StorageOut_TransferOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTAUT\StorageOut_TransferOut_DateCode.resx">
+      <DependentUpon>StorageOut_TransferOut_DateCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INAUT\StorageIn_OffLineIn_BatchImport.resx">
+      <DependentUpon>StorageIn_OffLineIn_BatchImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="report\Real_time_peding_query.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Real_time_peding_query1.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\TransferOut303.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TransferOut303.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\TransferOut313.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TransferOut313.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\TransferOut351.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TransferOut351.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\TransferOut60S.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TransferOut60S.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\WasteReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WasteReport.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\Waste_Print_Detail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Waste_Print_Detail.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Transfer\TransferData.resx">
+      <DependentUpon>TransferData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\TransferIn_101.resx">
+      <DependentUpon>TransferIn_101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\TransferOut_Print.resx">
+      <DependentUpon>TransferOut_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\TransferOut_Query.resx">
+      <DependentUpon>TransferOut_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\TransferOut_Upload_313_303.resx">
+      <DependentUpon>TransferOut_Upload_313_303.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\TransferOut_Upload_351_60S.resx">
+      <DependentUpon>TransferOut_Upload_351_60S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\Transfer_ApplyForCar.resx">
+      <DependentUpon>Transfer_ApplyForCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\Transfer_InputBox.resx">
+      <DependentUpon>Transfer_InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\Transfer_LocationSelect.resx">
+      <DependentUpon>Transfer_LocationSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="report\ScrapPacking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ScrapPacking1.cs</LastGenOutput>
+    </Content>
+    <Content Include="report\StoreIn_SplitLocation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StoreIn_SplitLocation.cs</LastGenOutput>
+    </Content>
+    <Content Include="App.ico" />
+    <Content Include="images\clsdfold.bmp">
+    </Content>
+    <Content Include="images\openfold.bmp">
+    </Content>
+    <Content Include="images\warning.bmp">
+    </Content>
+    <Content Include="lib\Interop.Excel.dll" />
+    <Content Include="lib\QCI_INT_Common.dll" />
+    <EmbeddedResource Include="Transfer\Transfer_LocationSelectBymblnr.resx">
+      <DependentUpon>Transfer_LocationSelectBymblnr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\Transfer_MblnrSelect.resx">
+      <DependentUpon>Transfer_MblnrSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="dbInner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbOuter.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbTest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Document\Pallet查询模板.xlsx" />
+    <None Include="Service References\OAMM\ICMSService.disco" />
+    <None Include="Service References\OAMM\configuration91.svcinfo" />
+    <None Include="Service References\OAMM\configuration.svcinfo" />
+    <None Include="Service References\OAMM\QWMS.OAMM.KeyinDataInterfaceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OAMM\QWMS.OAMM.LogisticsKeyinDataInterfaceForQWMSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OAMM\QWMS.OAMM.LogisticsKeyinDataInterfaceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OAMM\QWMS.OAMM.ZRFC_PD_DONE_LGORTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OAMM\QWMS.OAMM.Z_RFC_ZPHY0004Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OAMM\QWMS.OAMM.Z_RFC_ZPHY0005Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OAMM\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="report\Waste_Print_Model.txt" />
+    <Content Include="Sound\BIU.wav" />
+    <Content Include="Sound\Complete.wav" />
+    <Content Include="Sound\End.wav">
+    </Content>
+    <Content Include="Sound\ERROR.wav">
+    </Content>
+    <Content Include="Sound\Fail.wav">
+    </Content>
+    <Content Include="Sound\NEWOK.wav" />
+    <Content Include="Sound\NG.WAV" />
+    <Content Include="Sound\OK.wav">
+    </Content>
+    <Content Include="Sound\OK1.wav" />
+    <Content Include="Sound\OO.wav">
+    </Content>
+    <Content Include="Sound\ready.wav">
+    </Content>
+    <Content Include="Sound\Success.wav">
+    </Content>
+    <None Include="Service References\OAMM\ICMSService.wsdl" />
+    <None Include="Service References\OAMM\ICMSService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OAMM\ICMSService1.wsdl" />
+    <None Include="Service References\OAMM\ICMSService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OAMM\ICMSService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OAMM\ICMSService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OAMM\ICMSService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\BPMTIC\GWF074_wsUploadApvsta.wsdl" />
+    <None Include="Web References\BPMTIC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Document\ModelNo模板.xlsx" />
+    <Content Include="Document\Model库存批量查询模板.xlsx" />
+    <Content Include="Document\PartNo模板.xlsx" />
+    <Content Include="Document\Sample.xls" />
+    <Content Include="Document\Sample.xlsx" />
+    <Content Include="Document\离线Sample.xlsx" />
+    <None Include="Document\313_303模板.xlsx" />
+    <None Include="Web References\iworkflow\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\iworkflow\WFWebService.wsdl" />
+    <None Include="Web References\MailService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MailService\SendMailService.wsdl" />
+    <None Include="Web References\MM\mm_service.wsdl" />
+    <None Include="Web References\MM\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MM_Test\MM_Service.wsdl" />
+    <None Include="Web References\MM_Test\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MM_Test\MM_Service.disco" />
+    <None Include="Web References\iworkflow\WFWebService.disco" />
+    <None Include="Web References\MM\mm_service.disco" />
+    <None Include="Web References\BPMTIC\GWF074_wsUploadApvsta.disco" />
+    <None Include="Web References\PP\pp_service.wsdl" />
+    <None Include="Web References\PP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PP\pp_service.disco" />
+    <None Include="Web References\PP_Test\PP_Service.disco" />
+    <Content Include="Templates\Four_Big_Model_Locat.txt" />
+    <Content Include="Templates\Four_Small_Model_Locat.txt" />
+    <Content Include="Templates\Six_Big_Model_Locat.txt" />
+    <None Include="Web References\MailService\SendMailService.disco" />
+    <Content Include="Web References\WF\WF0152ForQWMS.disco" />
+    <None Include="Document\DateCode.xls" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PP_Test\PP_Service.wsdl" />
+    <None Include="Web References\PP_Test\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WF\Reference.map" />
+    <None Include="Web References\WF\WF0152ForQWMS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QCI_QWMS_Admin\QCI_QWMS_Admin.csproj">
+      <Project>{8C0D5D15-5519-4453-B405-60D0D499C12D}</Project>
+      <Name>QCI_QWMS_Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_AGVStorageIn\QCI_QWMS_AGVStorage.csproj">
+      <Project>{074be588-7fff-46e6-a009-3ea78c900200}</Project>
+      <Name>QCI_QWMS_AGVStorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Alim\QCI_QWMS_Alim.csproj">
+      <Project>{a07790cd-639e-4f36-acfd-b8eb7d642dfb}</Project>
+      <Name>QCI_QWMS_Alim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Authority\QCI_QWMS_Authority.csproj">
+      <Project>{B654EC03-49A4-4AE0-B7D1-7E51606BAA98}</Project>
+      <Name>QCI_QWMS_Authority</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_CarrouselData\QCI_QWMS_CarrouselData.csproj">
+      <Project>{b28a37d1-39aa-4aee-8ddf-b296d8142583}</Project>
+      <Name>QCI_QWMS_CarrouselData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Counting\QCI_QWMS_Counting.csproj">
+      <Project>{9FEBF88C-CBAE-4530-B33F-08EA5F00B6DF}</Project>
+      <Name>QCI_QWMS_Counting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Entity\QCI_QWMS_Entity.csproj">
+      <Project>{80868612-44ED-438A-B370-5C682E08D796}</Project>
+      <Name>QCI_QWMS_Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_IQCBRMaterial\QCI_QWMS_IQCBRMaterial.csproj">
+      <Project>{D0987C0C-7460-4CD3-A964-F93EACD43EA8}</Project>
+      <Name>QCI_QWMS_IQCBRMaterial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_LogData\QCI_QWMS_LogData.csproj">
+      <Project>{95F3D7EF-E580-427C-BFCB-3E8087C93E85}</Project>
+      <Name>QCI_QWMS_LogData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_MaterialPic\QCI_QWMS_MaterialPic.csproj">
+      <Project>{79131ED5-DC45-4A88-8A43-7FB14A83EA9E}</Project>
+      <Name>QCI_QWMS_MaterialPic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_MixedMaterial\QCI_QWMS_MixedMaterial.csproj">
+      <Project>{8692959F-1DDF-4767-A395-E98AE7A7F31C}</Project>
+      <Name>QCI_QWMS_MixedMaterial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Models\QCI_QWMS_Models.csproj">
+      <Project>{9FD8F503-EB4D-4908-8387-AEC63C90E434}</Project>
+      <Name>QCI_QWMS_Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_PlantData\QCI_QWMS_PlantData.csproj">
+      <Project>{3646ED12-4682-4A73-8722-78965F604D7A}</Project>
+      <Name>QCI_QWMS_PlantData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Replenishment\QCI_QWMS_Replenishment.csproj">
+      <Project>{142E6F43-745E-444D-87DC-98F0981A9FE5}</Project>
+      <Name>QCI_QWMS_Replenishment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_SapData\QCI_QWMS_SapData.csproj">
+      <Project>{1315BBA0-E371-48C4-ABD2-1AC894591A63}</Project>
+      <Name>QCI_QWMS_SapData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_StorageData\QCI_QWMS_StorageData.csproj">
+      <Project>{8661DFC5-95CD-468A-860C-9A89B6E87005}</Project>
+      <Name>QCI_QWMS_StorageData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_StorageIn\QCI_QWMS_StorageIn.csproj">
+      <Project>{8FD994C9-5001-4FB0-888F-1F5F642CB2A7}</Project>
+      <Name>QCI_QWMS_StorageIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_StorageOut\QCI_QWMS_StorageOut.csproj">
+      <Project>{AC32D483-89D5-4426-8308-DD4C0909377E}</Project>
+      <Name>QCI_QWMS_StorageOut</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Transfer\QCI_QWMS_Transfer.csproj">
+      <Project>{78099C44-9210-4226-AA52-9072B360F4FF}</Project>
+      <Name>QCI_QWMS_Transfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QWMS_CommonInfo_Biz\QWMS_CommonInfo_Biz.csproj">
+      <Project>{CA578BA4-6D80-4ED7-BDBC-C636C6A69BA2}</Project>
+      <Name>QWMS_CommonInfo_Biz</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.Enterprise.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.InfoStore">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.BatchParser">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ConnectionInfo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Diagnostics.STrace">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Dmf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.Sdk.Sfc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SmoMetadataProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.RegSvrEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Replication">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Rmo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ServiceBrokerEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Smo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SmoEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.WmiEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://oaap.quantacn.com/OAMS/SMS/SendMailService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MailService\</RelPath>
+      <UpdateFromURL>https://oaap.quantacn.com/OAMS/SMS/SendMailService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QWMS_MailService_SendMailService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://rfc.quantacn.com/QSMC/EC/mm/mm_service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MM\</RelPath>
+      <UpdateFromURL>https://rfc.quantacn.com/QSMC/EC/mm/mm_service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QWMS_MM_MM_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://rfc.quantacn.com/QSMC/EC/pp/pp_service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PP\</RelPath>
+      <UpdateFromURL>https://rfc.quantacn.com/QSMC/EC/pp/pp_service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QWMS_PP_PP_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:52605/MM_Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MM_Test\</RelPath>
+      <UpdateFromURL>http://localhost:52605/MM_Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QWMS_MM_Test_MM_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://wf.quantacn.com/WFWebService/WFWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\iworkflow\</RelPath>
+      <UpdateFromURL>https://wf.quantacn.com/WFWebService/WFWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QWMS_iworkflow_WFWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:50665/PP_Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PP_Test\</RelPath>
+      <UpdateFromURL>http://localhost:50665/PP_Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QWMS_PP_Test_PP_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://soaintra/BPM/gwf/gwf074/GWF074_wsUploadApvsta.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BPMTIC\</RelPath>
+      <UpdateFromURL>https://soaintra/BPM/gwf/gwf074/GWF074_wsUploadApvsta.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>QWMS_BPMTIC_GWF074_wsUploadApvsta</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\OAMM\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

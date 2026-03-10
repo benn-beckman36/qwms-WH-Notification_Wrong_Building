@@ -1,0 +1,26 @@
+﻿[
+  {
+    "Site": "QSMC",
+    "DbCode": "TCC_9200",
+    "SystemID": "QWMS_T",
+    "LinkID": "QWMS_9200",
+    "RequestKey": "40E3D68F-774A-46CE-A84A-1E9881B6D800",
+    "EncryptKey": "C66F6D1D"
+  },
+  {
+    "Site": "QSMC",
+    "DbCode": "TCC_9200_R",
+    "SystemID": "QWMS_T",
+    "LinkID": "QWMS_9200_R",
+    "RequestKey": "80456117-855C-4754-94A3-820B2CDC528E",
+    "EncryptKey": "51F27980"
+  },
+  {
+    "Site": "QSMC",
+    "DbCode": "ErrCode",
+    "SystemID": "QSMC",
+    "LinkID": "ErrorLog",
+    "RequestKey": "DC1F3C02-8FA1-43A1-8D07-B0DCE007F5E9",
+    "EncryptKey": "133CC090"
+  }
+]

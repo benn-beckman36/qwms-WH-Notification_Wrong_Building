@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="wsActionFunction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intDBType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDBCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varFormID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varApplid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varFlowLevel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varFlowNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varSeqNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varQuType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varSituat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varParam01" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varParam02" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsActionFunctionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="wsActionFunctionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GWF074_ProvideQWMSApproveScrapItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varBPMApplid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varSAPRefnum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GWF074_ProvideQWMSApproveScrapItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GWF074_ProvideQWMSApproveScrapItemResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="wsActionFunctionSoapIn">
+    <wsdl:part name="parameters" element="tns:wsActionFunction" />
+  </wsdl:message>
+  <wsdl:message name="wsActionFunctionSoapOut">
+    <wsdl:part name="parameters" element="tns:wsActionFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GWF074_ProvideQWMSApproveScrapItemSoapIn">
+    <wsdl:part name="parameters" element="tns:GWF074_ProvideQWMSApproveScrapItem" />
+  </wsdl:message>
+  <wsdl:message name="GWF074_ProvideQWMSApproveScrapItemSoapOut">
+    <wsdl:part name="parameters" element="tns:GWF074_ProvideQWMSApproveScrapItemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GWF074_wsUploadApvstaSoap">
+    <wsdl:operation name="wsActionFunction">
+      <wsdl:input message="tns:wsActionFunctionSoapIn" />
+      <wsdl:output message="tns:wsActionFunctionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GWF074_ProvideQWMSApproveScrapItem">
+      <wsdl:input message="tns:GWF074_ProvideQWMSApproveScrapItemSoapIn" />
+      <wsdl:output message="tns:GWF074_ProvideQWMSApproveScrapItemSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GWF074_wsUploadApvstaSoap" type="tns:GWF074_wsUploadApvstaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="wsActionFunction">
+      <soap:operation soapAction="http://tempuri.org/wsActionFunction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GWF074_ProvideQWMSApproveScrapItem">
+      <soap:operation soapAction="http://tempuri.org/GWF074_ProvideQWMSApproveScrapItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GWF074_wsUploadApvstaSoap12" type="tns:GWF074_wsUploadApvstaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="wsActionFunction">
+      <soap12:operation soapAction="http://tempuri.org/wsActionFunction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GWF074_ProvideQWMSApproveScrapItem">
+      <soap12:operation soapAction="http://tempuri.org/GWF074_ProvideQWMSApproveScrapItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GWF074_wsUploadApvsta">
+    <wsdl:port name="GWF074_wsUploadApvstaSoap" binding="tns:GWF074_wsUploadApvstaSoap">
+      <soap:address location="https://soaintra/BPM/gwf/gwf074/GWF074_wsUploadApvsta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GWF074_wsUploadApvstaSoap12" binding="tns:GWF074_wsUploadApvstaSoap12">
+      <soap12:address location="https://soaintra/BPM/gwf/gwf074/GWF074_wsUploadApvsta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

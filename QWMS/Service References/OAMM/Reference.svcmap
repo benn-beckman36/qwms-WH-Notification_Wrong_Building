@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8f913cf9-eb7a-43e9-b50a-5f7c94b24776" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ICMSService.xsd" MetadataType="Schema" ID="4eb9f3b7-dfc6-4978-a409-ffa2fe45083b" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ICMSService.wsdl" MetadataType="Wsdl" ID="d4fe3939-a40c-4790-b064-b78ef42b616e" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?wsdl" />
+    <MetadataFile FileName="ICMSService1.xsd" MetadataType="Schema" ID="80b78a72-5849-453e-9aa5-c341d208b2e2" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ICMSService2.xsd" MetadataType="Schema" ID="de35ed54-f1cd-4a98-97e7-b10e9af7055e" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ICMSService.disco" MetadataType="Disco" ID="6f08594a-985f-48f9-9676-6ed2ba236e1e" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?disco" />
+    <MetadataFile FileName="ICMSService3.xsd" MetadataType="Schema" ID="9d57aa5b-52ba-4f11-b5fa-4e0dea007583" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ICMSService1.wsdl" MetadataType="Wsdl" ID="99df909b-9776-4e2d-b096-336620fa99b1" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ICMSService4.xsd" MetadataType="Schema" ID="5062a916-38f7-48bf-bdf9-055dcc08debf" SourceId="1" SourceUrl="http://172.16.2.50/QSMC/OA/MM/ICMS/ICMSService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

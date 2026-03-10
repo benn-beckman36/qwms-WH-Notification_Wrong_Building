@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FD994C9-5001-4FB0-888F-1F5F642CB2A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QCI_QWMS_StorageIn</RootNamespace>
+    <AssemblyName>QCI_QWMS_StorageIn</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="clsZRFC_INSERT_SMT_DEMANDN, Version=1.0.3916.31468, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\QSMC\QWMS\clsZRFC_INSERT_SMT_DEMANDN.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonObjects, Version=1.0.1.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\CommonObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SAP.Connector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=50436dca5c7f7d23">
+      <HintPath>..\..\QSMC_QWMS\QCI_QWMS_StorageIn\bin\Debug\SAP.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="SAP.Connector.Rfc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=50436dca5c7f7d23">
+      <HintPath>..\..\QSMC_QWMS\QCI_QWMS_StorageIn\bin\Debug\SAP.Connector.Rfc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZRFC_311_AUTO_RETURN, Version=1.0.3639.20579, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\QSMC\QWMS\ZRFC_311_AUTO_RETURN.dll</HintPath>
+    </Reference>
+    <Reference Include="ZRFC_GET_SMT_STOCK, Version=1.0.3639.20576, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\QSMC\QWMS\ZRFC_GET_SMT_STOCK.dll</HintPath>
+    </Reference>
+    <Reference Include="ZRFC_WO_AUTO_GR, Version=1.0.3583.29957, Culture=neutral">
+      <HintPath>G:\QSMC\QWMS\ZRFC_WO_AUTO_GR.dll</HintPath>
+    </Reference>
+    <Reference Include="Z_RFC_QMS_AUTO_RETURN_318, Version=1.0.3588.30791, Culture=neutral">
+      <HintPath>G:\QSMC\QWMS\Z_RFC_QMS_AUTO_RETURN_318.dll</HintPath>
+    </Reference>
+    <Reference Include="Z_RFC_QMS_STOCK_318, Version=1.0.3608.15330, Culture=neutral">
+      <HintPath>G:\QSMC\QWMS\Z_RFC_QMS_STOCK_318.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StorageIn.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QCI_QWMS_Authority\QCI_QWMS_Authority.csproj">
+      <Project>{B654EC03-49A4-4AE0-B7D1-7E51606BAA98}</Project>
+      <Name>QCI_QWMS_Authority</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_CarrouselData\QCI_QWMS_CarrouselData.csproj">
+      <Project>{B28A37D1-39AA-4AEE-8DDF-B296D8142583}</Project>
+      <Name>QCI_QWMS_CarrouselData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_Entity\QCI_QWMS_Entity.csproj">
+      <Project>{80868612-44ED-438A-B370-5C682E08D796}</Project>
+      <Name>QCI_QWMS_Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_LogData\QCI_QWMS_LogData.csproj">
+      <Project>{95F3D7EF-E580-427C-BFCB-3E8087C93E85}</Project>
+      <Name>QCI_QWMS_LogData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_MixedMaterial\QCI_QWMS_MixedMaterial.csproj">
+      <Project>{8692959F-1DDF-4767-A395-E98AE7A7F31C}</Project>
+      <Name>QCI_QWMS_MixedMaterial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_PlantData\QCI_QWMS_PlantData.csproj">
+      <Project>{3646ED12-4682-4A73-8722-78965F604D7A}</Project>
+      <Name>QCI_QWMS_PlantData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QCI_QWMS_StorageData\QCI_QWMS_StorageData.csproj">
+      <Project>{8661DFC5-95CD-468A-860C-9A89B6E87005}</Project>
+      <Name>QCI_QWMS_StorageData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QWMS_CommonInfo_Biz\QWMS_CommonInfo_Biz.csproj">
+      <Project>{CA578BA4-6D80-4ED7-BDBC-C636C6A69BA2}</Project>
+      <Name>QWMS_CommonInfo_Biz</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\clsZRFC_INSERT_SMT_DEMANDN.dll" />
+    <Content Include="lib\CommonObjects.dll" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="lib\SAP.Connector.dll" />
+    <Content Include="lib\SAP.Connector.Rfc.dll" />
+    <Content Include="lib\ZRFC_311_AUTO_RETURN.dll" />
+    <Content Include="lib\ZRFC_GET_SMT_STOCK.dll" />
+    <Content Include="lib\ZRFC_WO_AUTO_GR.dll" />
+    <Content Include="lib\Z_RFC_QMS_AUTO_RETURN_318.dll" />
+    <Content Include="lib\Z_RFC_QMS_STOCK_318.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

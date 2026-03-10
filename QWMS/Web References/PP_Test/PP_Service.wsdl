@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx">
+      <s:element name="Z_RFC_VMATNR1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varMatnr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_VMATNR1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_VMATNR1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_IQC_ZMWFC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vards">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_IQC_ZMWFCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_IQC_ZMWFCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_311_AUTO_RETURN_N">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vards">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_311_AUTO_RETURN_NResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_PP_311_AUTO_RETURN_NResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_MM_QWMS_LGORT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_MM_QWMS_LGORTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_MM_QWMS_LGORTResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_QWMS_DEBIT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_QWMS_DEBITResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_PP_QWMS_DEBITResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_311_AUTO_RETURN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vards">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_311_AUTO_RETURNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_PP_311_AUTO_RETURNResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_WO_AUTO_GR_N">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vards">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_WO_AUTO_GR_NResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_PP_WO_AUTO_GR_NResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_311_AUTO_RETURN_M">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vards">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_PP_311_AUTO_RETURN_MResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_PP_311_AUTO_RETURN_MResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Z_RFC_VMATNR1SoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_VMATNR1" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_VMATNR1SoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_VMATNR1Response" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_IQC_ZMWFCSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_IQC_ZMWFC" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_IQC_ZMWFCSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_IQC_ZMWFCResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_311_AUTO_RETURN_NSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_311_AUTO_RETURN_N" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_311_AUTO_RETURN_NSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_311_AUTO_RETURN_NResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_MM_QWMS_LGORTSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_MM_QWMS_LGORT" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_MM_QWMS_LGORTSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_MM_QWMS_LGORTResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_QWMS_DEBITSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_QWMS_DEBIT" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_QWMS_DEBITSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_QWMS_DEBITResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_311_AUTO_RETURNSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_311_AUTO_RETURN" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_311_AUTO_RETURNSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_311_AUTO_RETURNResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_WO_AUTO_GR_NSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_WO_AUTO_GR_N" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_WO_AUTO_GR_NSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_WO_AUTO_GR_NResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_311_AUTO_RETURN_MSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_311_AUTO_RETURN_M" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_PP_311_AUTO_RETURN_MSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_PP_311_AUTO_RETURN_MResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PP_ServiceSoap">
+    <wsdl:operation name="Z_RFC_VMATNR1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">鉴定书系统:得到供应商货号</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_VMATNR1SoapIn" />
+      <wsdl:output message="tns:Z_RFC_VMATNR1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_IQC_ZMWFC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QWMS_CSMC:传入RefDoc到SAP得到回执</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_IQC_ZMWFCSoapIn" />
+      <wsdl:output message="tns:ZRFC_IQC_ZMWFCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN_N">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QWMS:PCBA退库，丢文档到SAP入库</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_PP_311_AUTO_RETURN_NSoapIn" />
+      <wsdl:output message="tns:ZRFC_PP_311_AUTO_RETURN_NSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_MM_QWMS_LGORT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">同步仓别信息到SAP</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_MM_QWMS_LGORTSoapIn" />
+      <wsdl:output message="tns:ZRFC_MM_QWMS_LGORTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_QWMS_DEBIT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QWMS退料系统化</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_PP_QWMS_DEBITSoapIn" />
+      <wsdl:output message="tns:ZRFC_PP_QWMS_DEBITSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QWMS:工单入库311</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_PP_311_AUTO_RETURNSoapIn" />
+      <wsdl:output message="tns:ZRFC_PP_311_AUTO_RETURNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_WO_AUTO_GR_N">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QWMS:工单入库101</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_PP_WO_AUTO_GR_NSoapIn" />
+      <wsdl:output message="tns:ZRFC_PP_WO_AUTO_GR_NSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN_M">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QWMS:批量SMT入库</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_PP_311_AUTO_RETURN_MSoapIn" />
+      <wsdl:output message="tns:ZRFC_PP_311_AUTO_RETURN_MSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PP_ServiceSoap" type="tns:PP_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Z_RFC_VMATNR1">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/Z_RFC_VMATNR1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_IQC_ZMWFC">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_IQC_ZMWFC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN_N">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_311_AUTO_RETURN_N" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_MM_QWMS_LGORT">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_MM_QWMS_LGORT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_QWMS_DEBIT">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_QWMS_DEBIT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_311_AUTO_RETURN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_WO_AUTO_GR_N">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_WO_AUTO_GR_N" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN_M">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_311_AUTO_RETURN_M" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PP_ServiceSoap12" type="tns:PP_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Z_RFC_VMATNR1">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/Z_RFC_VMATNR1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_IQC_ZMWFC">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_IQC_ZMWFC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN_N">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_311_AUTO_RETURN_N" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_MM_QWMS_LGORT">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_MM_QWMS_LGORT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_QWMS_DEBIT">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_QWMS_DEBIT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_311_AUTO_RETURN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_WO_AUTO_GR_N">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_WO_AUTO_GR_N" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_PP_311_AUTO_RETURN_M">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/PP/PP_Service.asmx/ZRFC_PP_311_AUTO_RETURN_M" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PP_Service">
+    <wsdl:port name="PP_ServiceSoap" binding="tns:PP_ServiceSoap">
+      <soap:address location="http://localhost:50665/PP_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PP_ServiceSoap12" binding="tns:PP_ServiceSoap12">
+      <soap12:address location="http://localhost:50665/PP_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

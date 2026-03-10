@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ReturnBasicFlowDataSet">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReturnBasicFlowDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnBasicFlowDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproverByRMB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="depcod" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="money" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsApvcod" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsJobName" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproverByRMBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApproverByRMBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQMBApproverByRMB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="depcod" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="money" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsApvcod" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsJobName" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Emplid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQMBApproverByRMBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQMBApproverByRMBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnApplicationIDGUID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnApplicationIDGUIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReturnApplicationIDGUIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateApplicationUseDefaultFlowData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateApplicationUseDefaultFlowDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateApplicationUseDefaultFlowDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flow">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateApplicationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateApplicationKeyID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flow">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="keyID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateApplicationKeyIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateApplicationKeyIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cancelReason" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelApplicationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelApplicationCancelBy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cancelReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CancelBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelApplicationCancelByResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelApplicationCancelByResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Approve">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sequenceNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="approveStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="approveRemark" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApproveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ApproveResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetIsWFSApprove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sequenceNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="approveStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="approveRemark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isWFS" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetIsWFSApproveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetIsWFSApproveResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyApprover">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sequenceNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyApproverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ModifyApproverResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPreviousFlow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPreviousFlowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertPreviousFlowResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNextFlow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNextFlowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertNextFlowResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNextFlowIsOnlyNotice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNextFlowIsOnlyNoticeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertNextFlowIsOnlyNoticeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNextFlowFullParameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flowDescrption" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isSimpleApprove" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="dueDay" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dueProcessMode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNextFlowFullParameterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertNextFlowFullParameterResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSequence">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="approver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="agent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSequenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSequenceResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFlow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sequenceNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="deleteReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deleteBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFlowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteFlowResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplicationStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplicationStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryApplicationStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationApproveFlow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationApproveFlowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationApproveFlowResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentFlowDescription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userEmplid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comcod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApplicationID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sequenceNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentFlowDescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentFlowDescriptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApprData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strApprover" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAppFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAppTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strForm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApprDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApprDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsEndFlowNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="formID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApplicationID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="flowNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsEndFlowNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsEndFlowNoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateEmplid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varOldEmplid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varNewEmplid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateEmplidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateEmplidResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ReturnBasicFlowDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnBasicFlowDataSet" />
+  </wsdl:message>
+  <wsdl:message name="ReturnBasicFlowDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnBasicFlowDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApproverByRMBSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApproverByRMB" />
+  </wsdl:message>
+  <wsdl:message name="GetApproverByRMBSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApproverByRMBResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQMBApproverByRMBSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQMBApproverByRMB" />
+  </wsdl:message>
+  <wsdl:message name="GetQMBApproverByRMBSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQMBApproverByRMBResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnApplicationIDGUIDSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnApplicationIDGUID" />
+  </wsdl:message>
+  <wsdl:message name="ReturnApplicationIDGUIDSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnApplicationIDGUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationUseDefaultFlowDataSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateApplicationUseDefaultFlowData" />
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationUseDefaultFlowDataSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateApplicationUseDefaultFlowDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateApplication" />
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationKeyIDSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateApplicationKeyID" />
+  </wsdl:message>
+  <wsdl:message name="CreateApplicationKeyIDSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateApplicationKeyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelApplication" />
+  </wsdl:message>
+  <wsdl:message name="CancelApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelApplicationCancelBySoapIn">
+    <wsdl:part name="parameters" element="tns:CancelApplicationCancelBy" />
+  </wsdl:message>
+  <wsdl:message name="CancelApplicationCancelBySoapOut">
+    <wsdl:part name="parameters" element="tns:CancelApplicationCancelByResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApproveSoapIn">
+    <wsdl:part name="parameters" element="tns:Approve" />
+  </wsdl:message>
+  <wsdl:message name="ApproveSoapOut">
+    <wsdl:part name="parameters" element="tns:ApproveResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetIsWFSApproveSoapIn">
+    <wsdl:part name="parameters" element="tns:SetIsWFSApprove" />
+  </wsdl:message>
+  <wsdl:message name="SetIsWFSApproveSoapOut">
+    <wsdl:part name="parameters" element="tns:SetIsWFSApproveResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifyApproverSoapIn">
+    <wsdl:part name="parameters" element="tns:ModifyApprover" />
+  </wsdl:message>
+  <wsdl:message name="ModifyApproverSoapOut">
+    <wsdl:part name="parameters" element="tns:ModifyApproverResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPreviousFlowSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPreviousFlow" />
+  </wsdl:message>
+  <wsdl:message name="InsertPreviousFlowSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPreviousFlowResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertNextFlowSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertNextFlow" />
+  </wsdl:message>
+  <wsdl:message name="InsertNextFlowSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertNextFlowResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertNextFlowIsOnlyNoticeSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertNextFlowIsOnlyNotice" />
+  </wsdl:message>
+  <wsdl:message name="InsertNextFlowIsOnlyNoticeSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertNextFlowIsOnlyNoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertNextFlowFullParameterSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertNextFlowFullParameter" />
+  </wsdl:message>
+  <wsdl:message name="InsertNextFlowFullParameterSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertNextFlowFullParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSequenceSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSequence" />
+  </wsdl:message>
+  <wsdl:message name="InsertSequenceSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSequenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFlowSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteFlow" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFlowSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteFlowResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplicationStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryApplicationStatus" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplicationStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryApplicationStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationApproveFlowSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationApproveFlow" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationApproveFlowSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationApproveFlowResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentFlowDescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentFlowDescription" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentFlowDescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentFlowDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApprDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApprData" />
+  </wsdl:message>
+  <wsdl:message name="GetApprDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApprDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsEndFlowNoSoapIn">
+    <wsdl:part name="parameters" element="tns:IsEndFlowNo" />
+  </wsdl:message>
+  <wsdl:message name="IsEndFlowNoSoapOut">
+    <wsdl:part name="parameters" element="tns:IsEndFlowNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEmplidSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateEmplid" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEmplidSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateEmplidResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WFWebServiceSoap">
+    <wsdl:operation name="ReturnBasicFlowDataSet">
+      <wsdl:input message="tns:ReturnBasicFlowDataSetSoapIn" />
+      <wsdl:output message="tns:ReturnBasicFlowDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverByRMB">
+      <wsdl:input message="tns:GetApproverByRMBSoapIn" />
+      <wsdl:output message="tns:GetApproverByRMBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQMBApproverByRMB">
+      <wsdl:input message="tns:GetQMBApproverByRMBSoapIn" />
+      <wsdl:output message="tns:GetQMBApproverByRMBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnApplicationIDGUID">
+      <wsdl:input message="tns:ReturnApplicationIDGUIDSoapIn" />
+      <wsdl:output message="tns:ReturnApplicationIDGUIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplicationUseDefaultFlowData">
+      <wsdl:input message="tns:CreateApplicationUseDefaultFlowDataSoapIn" />
+      <wsdl:output message="tns:CreateApplicationUseDefaultFlowDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplication">
+      <wsdl:input message="tns:CreateApplicationSoapIn" />
+      <wsdl:output message="tns:CreateApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplicationKeyID">
+      <wsdl:input message="tns:CreateApplicationKeyIDSoapIn" />
+      <wsdl:output message="tns:CreateApplicationKeyIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelApplication">
+      <wsdl:input message="tns:CancelApplicationSoapIn" />
+      <wsdl:output message="tns:CancelApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelApplicationCancelBy">
+      <wsdl:input message="tns:CancelApplicationCancelBySoapIn" />
+      <wsdl:output message="tns:CancelApplicationCancelBySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Approve">
+      <wsdl:input message="tns:ApproveSoapIn" />
+      <wsdl:output message="tns:ApproveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIsWFSApprove">
+      <wsdl:input message="tns:SetIsWFSApproveSoapIn" />
+      <wsdl:output message="tns:SetIsWFSApproveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyApprover">
+      <wsdl:input message="tns:ModifyApproverSoapIn" />
+      <wsdl:output message="tns:ModifyApproverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPreviousFlow">
+      <wsdl:input message="tns:InsertPreviousFlowSoapIn" />
+      <wsdl:output message="tns:InsertPreviousFlowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlow">
+      <wsdl:input message="tns:InsertNextFlowSoapIn" />
+      <wsdl:output message="tns:InsertNextFlowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlowIsOnlyNotice">
+      <wsdl:input message="tns:InsertNextFlowIsOnlyNoticeSoapIn" />
+      <wsdl:output message="tns:InsertNextFlowIsOnlyNoticeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlowFullParameter">
+      <wsdl:input message="tns:InsertNextFlowFullParameterSoapIn" />
+      <wsdl:output message="tns:InsertNextFlowFullParameterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSequence">
+      <wsdl:input message="tns:InsertSequenceSoapIn" />
+      <wsdl:output message="tns:InsertSequenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFlow">
+      <wsdl:input message="tns:DeleteFlowSoapIn" />
+      <wsdl:output message="tns:DeleteFlowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplicationStatus">
+      <wsdl:input message="tns:QueryApplicationStatusSoapIn" />
+      <wsdl:output message="tns:QueryApplicationStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationApproveFlow">
+      <wsdl:input message="tns:GetApplicationApproveFlowSoapIn" />
+      <wsdl:output message="tns:GetApplicationApproveFlowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentFlowDescription">
+      <wsdl:input message="tns:GetCurrentFlowDescriptionSoapIn" />
+      <wsdl:output message="tns:GetCurrentFlowDescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprData">
+      <wsdl:input message="tns:GetApprDataSoapIn" />
+      <wsdl:output message="tns:GetApprDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsEndFlowNo">
+      <wsdl:input message="tns:IsEndFlowNoSoapIn" />
+      <wsdl:output message="tns:IsEndFlowNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmplid">
+      <wsdl:input message="tns:UpdateEmplidSoapIn" />
+      <wsdl:output message="tns:UpdateEmplidSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WFWebServiceSoap" type="tns:WFWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReturnBasicFlowDataSet">
+      <soap:operation soapAction="http://tempuri.org/ReturnBasicFlowDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverByRMB">
+      <soap:operation soapAction="http://tempuri.org/GetApproverByRMB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQMBApproverByRMB">
+      <soap:operation soapAction="http://tempuri.org/GetQMBApproverByRMB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnApplicationIDGUID">
+      <soap:operation soapAction="http://tempuri.org/ReturnApplicationIDGUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplicationUseDefaultFlowData">
+      <soap:operation soapAction="http://tempuri.org/CreateApplicationUseDefaultFlowData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplication">
+      <soap:operation soapAction="http://tempuri.org/CreateApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplicationKeyID">
+      <soap:operation soapAction="http://tempuri.org/CreateApplicationKeyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelApplication">
+      <soap:operation soapAction="http://tempuri.org/CancelApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelApplicationCancelBy">
+      <soap:operation soapAction="http://tempuri.org/CancelApplicationCancelBy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Approve">
+      <soap:operation soapAction="http://tempuri.org/Approve" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIsWFSApprove">
+      <soap:operation soapAction="http://tempuri.org/SetIsWFSApprove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyApprover">
+      <soap:operation soapAction="http://tempuri.org/ModifyApprover" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPreviousFlow">
+      <soap:operation soapAction="http://tempuri.org/InsertPreviousFlow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlow">
+      <soap:operation soapAction="http://tempuri.org/InsertNextFlow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlowIsOnlyNotice">
+      <soap:operation soapAction="http://tempuri.org/InsertNextFlowIsOnlyNotice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlowFullParameter">
+      <soap:operation soapAction="http://tempuri.org/InsertNextFlowFullParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSequence">
+      <soap:operation soapAction="http://tempuri.org/InsertSequence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFlow">
+      <soap:operation soapAction="http://tempuri.org/DeleteFlow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplicationStatus">
+      <soap:operation soapAction="http://tempuri.org/QueryApplicationStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationApproveFlow">
+      <soap:operation soapAction="http://tempuri.org/GetApplicationApproveFlow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentFlowDescription">
+      <soap:operation soapAction="http://tempuri.org/GetCurrentFlowDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprData">
+      <soap:operation soapAction="http://tempuri.org/GetApprData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEndFlowNo">
+      <soap:operation soapAction="http://tempuri.org/IsEndFlowNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmplid">
+      <soap:operation soapAction="http://tempuri.org/UpdateEmplid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WFWebServiceSoap12" type="tns:WFWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReturnBasicFlowDataSet">
+      <soap12:operation soapAction="http://tempuri.org/ReturnBasicFlowDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproverByRMB">
+      <soap12:operation soapAction="http://tempuri.org/GetApproverByRMB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQMBApproverByRMB">
+      <soap12:operation soapAction="http://tempuri.org/GetQMBApproverByRMB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnApplicationIDGUID">
+      <soap12:operation soapAction="http://tempuri.org/ReturnApplicationIDGUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplicationUseDefaultFlowData">
+      <soap12:operation soapAction="http://tempuri.org/CreateApplicationUseDefaultFlowData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplication">
+      <soap12:operation soapAction="http://tempuri.org/CreateApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplicationKeyID">
+      <soap12:operation soapAction="http://tempuri.org/CreateApplicationKeyID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelApplication">
+      <soap12:operation soapAction="http://tempuri.org/CancelApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelApplicationCancelBy">
+      <soap12:operation soapAction="http://tempuri.org/CancelApplicationCancelBy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Approve">
+      <soap12:operation soapAction="http://tempuri.org/Approve" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIsWFSApprove">
+      <soap12:operation soapAction="http://tempuri.org/SetIsWFSApprove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyApprover">
+      <soap12:operation soapAction="http://tempuri.org/ModifyApprover" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPreviousFlow">
+      <soap12:operation soapAction="http://tempuri.org/InsertPreviousFlow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlow">
+      <soap12:operation soapAction="http://tempuri.org/InsertNextFlow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlowIsOnlyNotice">
+      <soap12:operation soapAction="http://tempuri.org/InsertNextFlowIsOnlyNotice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNextFlowFullParameter">
+      <soap12:operation soapAction="http://tempuri.org/InsertNextFlowFullParameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSequence">
+      <soap12:operation soapAction="http://tempuri.org/InsertSequence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFlow">
+      <soap12:operation soapAction="http://tempuri.org/DeleteFlow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplicationStatus">
+      <soap12:operation soapAction="http://tempuri.org/QueryApplicationStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationApproveFlow">
+      <soap12:operation soapAction="http://tempuri.org/GetApplicationApproveFlow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentFlowDescription">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrentFlowDescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprData">
+      <soap12:operation soapAction="http://tempuri.org/GetApprData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEndFlowNo">
+      <soap12:operation soapAction="http://tempuri.org/IsEndFlowNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmplid">
+      <soap12:operation soapAction="http://tempuri.org/UpdateEmplid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WFWebService">
+    <wsdl:port name="WFWebServiceSoap" binding="tns:WFWebServiceSoap">
+      <soap:address location="https://wf.quantacn.com/WFWebService/WFWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WFWebServiceSoap12" binding="tns:WFWebServiceSoap12">
+      <soap12:address location="https://wf.quantacn.com/WFWebService/WFWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

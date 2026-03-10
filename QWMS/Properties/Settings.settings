@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QWMS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="QWMS_WF_WF0152ForQWMS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wf.quantacn.com/WFWebService/WF0152/WF0152ForQWMS.asmx</Value>
+    </Setting>
+    <Setting Name="QWMS_iworkflow_WFWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wf.quantacn.com/WFWebService/WFWebService.asmx</Value>
+    </Setting>
+    <Setting Name="QWMS_BPMTIC_GWF074_wsUploadApvsta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://soaintra/BPM/gwf/gwf074/GWF074_wsUploadApvsta.asmx</Value>
+    </Setting>
+    <Setting Name="QWMS_MM_MM_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://rfc.quantacn.com/QSMC/EC/mm/mm_service.asmx</Value>
+    </Setting>
+    <Setting Name="QWMS_PP_Test_PP_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:50665/PP_Service.asmx</Value>
+    </Setting>
+    <Setting Name="QWMS_PP_PP_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://rfc.quantacn.com/QSMC/EC/pp/pp_service.asmx</Value>
+    </Setting>
+    <Setting Name="QWMS_MailService_SendMailService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://oaap.quantacn.com/OAMS/SMS/SendMailService.asmx</Value>
+    </Setting>
+    <Setting Name="QWMS_MM_Test_MM_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:52605/MM_Service.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

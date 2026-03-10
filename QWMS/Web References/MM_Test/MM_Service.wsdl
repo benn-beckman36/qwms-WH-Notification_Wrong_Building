@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx">
+      <s:element name="Z_Ec_Getmat_Rfc2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varPlant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varMaterial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varVendorCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Ec_Getmat_Rfc2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_Ec_Getmat_Rfc2Result" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Z_Rfc_Ec503_Mblnr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varConditions">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Rfc_Ec503_MblnrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_Rfc_Ec503_MblnrResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Rfc_Ec503_Forpmc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Rfc_Ec503_ForpmcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_Rfc_Ec503_ForpmcResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Rfc_Ec503_Grinfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Rfc_Ec503_GrinfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_Rfc_Ec503_GrinfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Rfc_Rtv_From_Ec_311f">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_Rfc_Rtv_From_Ec_311fResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_Rfc_Rtv_From_Ec_311fResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_EC503_FORPUR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_EC503_FORPURResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_EC503_FORPURResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_SYN_503_MODEL_BU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_SYN_503_MODEL_BUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_SYN_503_MODEL_BUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_GET503PACKING">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_GET503PACKINGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_GET503PACKINGResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_503_EXCHANGE_RATE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_503_EXCHANGE_RATEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_503_EXCHANGE_RATEResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_EC_GETMAT_RFC_LOT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_EC_GETMAT_RFC_LOTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_EC_GETMAT_RFC_LOTResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZBAPI_PO_CREATE1_851PO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vardsNHeader">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="vardsNItem">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZBAPI_PO_CREATE1_851POResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZBAPI_PO_CREATE1_851POResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZBAPI_PO_CREATE1_851PO_Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vardsNData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZBAPI_PO_CREATE1_851PO_DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZBAPI_PO_CREATE1_851PO_DeleteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExportCustomsDataItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_BUKRS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Z_ZEXNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExportCustomsDataItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExportCustomsDataItemResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_46PO_RECORD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vardsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_46PO_RECORDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_46PO_RECORDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_POSTYCN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_POSTYCNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_MM_RFC_POSTYCNResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_PACKING_POST">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varPnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varRun" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vardsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_PACKING_POSTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_PACKING_POSTResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_PACKING_POST_M">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varPnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varRun" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vardsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_PACKING_POST_MResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_PACKING_POST_MResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_SCRAP_ZSC1_POST">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varMANDT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varMJAHR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varWERKS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varSCPNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_SCRAP_ZSC1_POSTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_SCRAP_ZSC1_POSTResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_COMPARE_QWMSSAP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_COMPARE_QWMSSAPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_MM_RFC_COMPARE_QWMSSAPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_PACKING_TO_QWMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varPN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_PACKING_TO_QWMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_MM_RFC_PACKING_TO_QWMSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_PCBA_LIKE_ZCL2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varMANDT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varMJAHR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varWERKS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="varZBLBNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_PCBA_LIKE_ZCL2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_PCBA_LIKE_ZCL2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_MRPCODE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_MRPCODEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_MRPCODEResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_POSTYCN_QMMC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_POSTYCN_QMMCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_MM_RFC_POSTYCN_QMMCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_MM_SENDE_EDI_46PO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varCondition">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZRFC_MM_SENDE_EDI_46POResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZRFC_MM_SENDE_EDI_46POResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_DIAOBO_QWMS_TO_SAP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="varFlag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vardsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_DIAOBO_QWMS_TO_SAPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_MM_RFC_DIAOBO_QWMS_TO_SAPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_SCRAP_GR_QWMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vardsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_SCRAP_GR_QWMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_SCRAP_GR_QWMSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_ZBRF_DATA_TO_RC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="invoiceNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_MM_RFC_ZBRF_DATA_TO_RCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_MM_RFC_ZBRF_DATA_TO_RCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_ZSCRAP_TO_QWMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vardsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Z_RFC_ZSCRAP_TO_QWMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Z_RFC_ZSCRAP_TO_QWMSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Z_Ec_Getmat_Rfc2SoapIn">
+    <wsdl:part name="parameters" element="tns:Z_Ec_Getmat_Rfc2" />
+  </wsdl:message>
+  <wsdl:message name="Z_Ec_Getmat_Rfc2SoapOut">
+    <wsdl:part name="parameters" element="tns:Z_Ec_Getmat_Rfc2Response" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Ec503_MblnrSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Ec503_Mblnr" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Ec503_MblnrSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Ec503_MblnrResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Ec503_ForpmcSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Ec503_Forpmc" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Ec503_ForpmcSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Ec503_ForpmcResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Ec503_GrinfoSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Ec503_Grinfo" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Ec503_GrinfoSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Ec503_GrinfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Rtv_From_Ec_311fSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Rtv_From_Ec_311f" />
+  </wsdl:message>
+  <wsdl:message name="Z_Rfc_Rtv_From_Ec_311fSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_Rfc_Rtv_From_Ec_311fResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_EC503_FORPURSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_EC503_FORPUR" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_EC503_FORPURSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_EC503_FORPURResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_SYN_503_MODEL_BUSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_SYN_503_MODEL_BU" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_SYN_503_MODEL_BUSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_SYN_503_MODEL_BUResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_GET503PACKINGSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_GET503PACKING" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_GET503PACKINGSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_GET503PACKINGResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_503_EXCHANGE_RATESoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_503_EXCHANGE_RATE" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_503_EXCHANGE_RATESoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_503_EXCHANGE_RATEResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_EC_GETMAT_RFC_LOTSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_EC_GETMAT_RFC_LOT" />
+  </wsdl:message>
+  <wsdl:message name="Z_EC_GETMAT_RFC_LOTSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_EC_GETMAT_RFC_LOTResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZBAPI_PO_CREATE1_851POSoapIn">
+    <wsdl:part name="parameters" element="tns:ZBAPI_PO_CREATE1_851PO" />
+  </wsdl:message>
+  <wsdl:message name="ZBAPI_PO_CREATE1_851POSoapOut">
+    <wsdl:part name="parameters" element="tns:ZBAPI_PO_CREATE1_851POResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZBAPI_PO_CREATE1_851PO_DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:ZBAPI_PO_CREATE1_851PO_Delete" />
+  </wsdl:message>
+  <wsdl:message name="ZBAPI_PO_CREATE1_851PO_DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:ZBAPI_PO_CREATE1_851PO_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExportCustomsDataItemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExportCustomsDataItem" />
+  </wsdl:message>
+  <wsdl:message name="GetExportCustomsDataItemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExportCustomsDataItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_46PO_RECORDSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_46PO_RECORD" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_46PO_RECORDSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_46PO_RECORDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_POSTYCNSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_POSTYCN" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_POSTYCNSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_POSTYCNResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_PACKING_POSTSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_PACKING_POST" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_PACKING_POSTSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_PACKING_POSTResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_PACKING_POST_MSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_PACKING_POST_M" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_PACKING_POST_MSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_PACKING_POST_MResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_SCRAP_ZSC1_POSTSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_SCRAP_ZSC1_POST" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_SCRAP_ZSC1_POSTSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_SCRAP_ZSC1_POSTResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_COMPARE_QWMSSAPSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_COMPARE_QWMSSAP" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_COMPARE_QWMSSAPSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_COMPARE_QWMSSAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_PACKING_TO_QWMSSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_PACKING_TO_QWMS" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_PACKING_TO_QWMSSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_PACKING_TO_QWMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_PCBA_LIKE_ZCL2SoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_PCBA_LIKE_ZCL2" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_PCBA_LIKE_ZCL2SoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_PCBA_LIKE_ZCL2Response" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_MRPCODESoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_MRPCODE" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_MRPCODESoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_MRPCODEResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_POSTYCN_QMMCSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_POSTYCN_QMMC" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_POSTYCN_QMMCSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_POSTYCN_QMMCResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_MM_SENDE_EDI_46POSoapIn">
+    <wsdl:part name="parameters" element="tns:ZRFC_MM_SENDE_EDI_46PO" />
+  </wsdl:message>
+  <wsdl:message name="ZRFC_MM_SENDE_EDI_46POSoapOut">
+    <wsdl:part name="parameters" element="tns:ZRFC_MM_SENDE_EDI_46POResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_DIAOBO_QWMS_TO_SAPSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_DIAOBO_QWMS_TO_SAP" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_DIAOBO_QWMS_TO_SAPSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_DIAOBO_QWMS_TO_SAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_SCRAP_GR_QWMSSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_SCRAP_GR_QWMS" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_SCRAP_GR_QWMSSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_SCRAP_GR_QWMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_ZBRF_DATA_TO_RCSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_ZBRF_DATA_TO_RC" />
+  </wsdl:message>
+  <wsdl:message name="Z_MM_RFC_ZBRF_DATA_TO_RCSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_MM_RFC_ZBRF_DATA_TO_RCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_ZSCRAP_TO_QWMSSoapIn">
+    <wsdl:part name="parameters" element="tns:Z_RFC_ZSCRAP_TO_QWMS" />
+  </wsdl:message>
+  <wsdl:message name="Z_RFC_ZSCRAP_TO_QWMSSoapOut">
+    <wsdl:part name="parameters" element="tns:Z_RFC_ZSCRAP_TO_QWMSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MM_ServiceSoap">
+    <wsdl:operation name="Z_Ec_Getmat_Rfc2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:得到料号信息</wsdl:documentation>
+      <wsdl:input message="tns:Z_Ec_Getmat_Rfc2SoapIn" />
+      <wsdl:output message="tns:Z_Ec_Getmat_Rfc2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Mblnr">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:从SAP中得到MBLNR的信息</wsdl:documentation>
+      <wsdl:input message="tns:Z_Rfc_Ec503_MblnrSoapIn" />
+      <wsdl:output message="tns:Z_Rfc_Ec503_MblnrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Forpmc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:get data from SAP for Mail Content</wsdl:documentation>
+      <wsdl:input message="tns:Z_Rfc_Ec503_ForpmcSoapIn" />
+      <wsdl:output message="tns:Z_Rfc_Ec503_ForpmcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Grinfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:GetReturnDataFromSAP  311check</wsdl:documentation>
+      <wsdl:input message="tns:Z_Rfc_Ec503_GrinfoSoapIn" />
+      <wsdl:output message="tns:Z_Rfc_Ec503_GrinfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Rtv_From_Ec_311f">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:Get311dataFromSAP</wsdl:documentation>
+      <wsdl:input message="tns:Z_Rfc_Rtv_From_Ec_311fSoapIn" />
+      <wsdl:output message="tns:Z_Rfc_Rtv_From_Ec_311fSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_EC503_FORPUR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:GetDeductDataFromSAP</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_EC503_FORPURSoapIn" />
+      <wsdl:output message="tns:Z_RFC_EC503_FORPURSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SYN_503_MODEL_BU">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:GetModelDataFromSAP</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_SYN_503_MODEL_BUSoapIn" />
+      <wsdl:output message="tns:Z_RFC_SYN_503_MODEL_BUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_GET503PACKING">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:Get311dataFromSAP</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_GET503PACKINGSoapIn" />
+      <wsdl:output message="tns:Z_RFC_GET503PACKINGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_503_EXCHANGE_RATE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:ZRFC_503_EXCHANGE_RATE</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_503_EXCHANGE_RATESoapIn" />
+      <wsdl:output message="tns:ZRFC_503_EXCHANGE_RATESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_EC_GETMAT_RFC_LOT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:批量得到料号信息</wsdl:documentation>
+      <wsdl:input message="tns:Z_EC_GETMAT_RFC_LOTSoapIn" />
+      <wsdl:output message="tns:Z_EC_GETMAT_RFC_LOTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZBAPI_PO_CREATE1_851PO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:N类原物料获取851PO</wsdl:documentation>
+      <wsdl:input message="tns:ZBAPI_PO_CREATE1_851POSoapIn" />
+      <wsdl:output message="tns:ZBAPI_PO_CREATE1_851POSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZBAPI_PO_CREATE1_851PO_Delete">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">503 System:N类原物料删除851PO</wsdl:documentation>
+      <wsdl:input message="tns:ZBAPI_PO_CREATE1_851PO_DeleteSoapIn" />
+      <wsdl:output message="tns:ZBAPI_PO_CREATE1_851PO_DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExportCustomsDataItem">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ARP同步报关数据JOB:CALL MM RFC获得SAP出口退运报关单表体数据</wsdl:documentation>
+      <wsdl:input message="tns:GetExportCustomsDataItemSoapIn" />
+      <wsdl:output message="tns:GetExportCustomsDataItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_46PO_RECORD">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GBQWMS:调拨到仓库，仓库确认后，丢文档到SAP扣账，101扣账</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_46PO_RECORDSoapIn" />
+      <wsdl:output message="tns:ZRFC_46PO_RECORDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_POSTYCN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GBWMS:对原材小料件进行加扣，311扣账</wsdl:documentation>
+      <wsdl:input message="tns:Z_MM_RFC_POSTYCNSoapIn" />
+      <wsdl:output message="tns:Z_MM_RFC_POSTYCNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PACKING_POST">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">EC自动化扣账</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_PACKING_POSTSoapIn" />
+      <wsdl:output message="tns:Z_RFC_PACKING_POSTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PACKING_POST_M">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">EC自动化批量扣账</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_PACKING_POST_MSoapIn" />
+      <wsdl:output message="tns:Z_RFC_PACKING_POST_MSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SCRAP_ZSC1_POST">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">报废自动扣账--1&amp;S</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_SCRAP_ZSC1_POSTSoapIn" />
+      <wsdl:output message="tns:Z_RFC_SCRAP_ZSC1_POSTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_COMPARE_QWMSSAP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">库存差异实时比对</wsdl:documentation>
+      <wsdl:input message="tns:Z_MM_RFC_COMPARE_QWMSSAPSoapIn" />
+      <wsdl:output message="tns:Z_MM_RFC_COMPARE_QWMSSAPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_PACKING_TO_QWMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">废品PackingList查询</wsdl:documentation>
+      <wsdl:input message="tns:Z_MM_RFC_PACKING_TO_QWMSSoapIn" />
+      <wsdl:output message="tns:Z_MM_RFC_PACKING_TO_QWMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PCBA_LIKE_ZCL2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">报废自动扣账--F</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_PCBA_LIKE_ZCL2SoapIn" />
+      <wsdl:output message="tns:Z_RFC_PCBA_LIKE_ZCL2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_MRPCODE">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取SAP料号MRPCode信息</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_MRPCODESoapIn" />
+      <wsdl:output message="tns:Z_RFC_MRPCODESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_POSTYCN_QMMC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QMMC:对原材小料件进行加扣，311扣账</wsdl:documentation>
+      <wsdl:input message="tns:Z_MM_RFC_POSTYCN_QMMCSoapIn" />
+      <wsdl:output message="tns:Z_MM_RFC_POSTYCN_QMMCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_MM_SENDE_EDI_46PO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">QSMCEC CS1A上传进口报关信息到sap</wsdl:documentation>
+      <wsdl:input message="tns:ZRFC_MM_SENDE_EDI_46POSoapIn" />
+      <wsdl:output message="tns:ZRFC_MM_SENDE_EDI_46POSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_DIAOBO_QWMS_TO_SAP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">313/315/305/303/60S调拨单 扣账</wsdl:documentation>
+      <wsdl:input message="tns:Z_MM_RFC_DIAOBO_QWMS_TO_SAPSoapIn" />
+      <wsdl:output message="tns:Z_MM_RFC_DIAOBO_QWMS_TO_SAPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SCRAP_GR_QWMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">报废转移到XDS-查询单据号</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_SCRAP_GR_QWMSSoapIn" />
+      <wsdl:output message="tns:Z_RFC_SCRAP_GR_QWMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_ZBRF_DATA_TO_RC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">报表中心复出口协议书</wsdl:documentation>
+      <wsdl:input message="tns:Z_MM_RFC_ZBRF_DATA_TO_RCSoapIn" />
+      <wsdl:output message="tns:Z_MM_RFC_ZBRF_DATA_TO_RCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_ZSCRAP_TO_QWMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">实时库存比对——报废</wsdl:documentation>
+      <wsdl:input message="tns:Z_RFC_ZSCRAP_TO_QWMSSoapIn" />
+      <wsdl:output message="tns:Z_RFC_ZSCRAP_TO_QWMSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MM_ServiceSoap" type="tns:MM_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Z_Ec_Getmat_Rfc2">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Ec_Getmat_Rfc2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Mblnr">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Ec503_Mblnr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Forpmc">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Ec503_Forpmc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Grinfo">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Ec503_Grinfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Rtv_From_Ec_311f">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Rtv_From_Ec_311f" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_EC503_FORPUR">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_EC503_FORPUR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SYN_503_MODEL_BU">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_SYN_503_MODEL_BU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_GET503PACKING">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_GET503PACKING" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_503_EXCHANGE_RATE">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZRFC_503_EXCHANGE_RATE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_EC_GETMAT_RFC_LOT">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_EC_GETMAT_RFC_LOT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZBAPI_PO_CREATE1_851PO">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZBAPI_PO_CREATE1_851PO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZBAPI_PO_CREATE1_851PO_Delete">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZBAPI_PO_CREATE1_851PO_Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExportCustomsDataItem">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/GetExportCustomsDataItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_46PO_RECORD">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZRFC_46PO_RECORD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_POSTYCN">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_POSTYCN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PACKING_POST">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_PACKING_POST" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PACKING_POST_M">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_PACKING_POST_M" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SCRAP_ZSC1_POST">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_SCRAP_ZSC1_POST" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_COMPARE_QWMSSAP">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_COMPARE_QWMSSAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_PACKING_TO_QWMS">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_PACKING_TO_QWMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PCBA_LIKE_ZCL2">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_PCBA_LIKE_ZCL2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_MRPCODE">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_MRPCODE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_POSTYCN_QMMC">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_POSTYCN_QMMC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_MM_SENDE_EDI_46PO">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZRFC_MM_SENDE_EDI_46PO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_DIAOBO_QWMS_TO_SAP">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_DIAOBO_QWMS_TO_SAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SCRAP_GR_QWMS">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_SCRAP_GR_QWMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_ZBRF_DATA_TO_RC">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_ZBRF_DATA_TO_RC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_ZSCRAP_TO_QWMS">
+      <soap:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_ZSCRAP_TO_QWMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MM_ServiceSoap12" type="tns:MM_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Z_Ec_Getmat_Rfc2">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Ec_Getmat_Rfc2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Mblnr">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Ec503_Mblnr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Forpmc">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Ec503_Forpmc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Ec503_Grinfo">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Ec503_Grinfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_Rfc_Rtv_From_Ec_311f">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_Rfc_Rtv_From_Ec_311f" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_EC503_FORPUR">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_EC503_FORPUR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SYN_503_MODEL_BU">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_SYN_503_MODEL_BU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_GET503PACKING">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_GET503PACKING" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_503_EXCHANGE_RATE">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZRFC_503_EXCHANGE_RATE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_EC_GETMAT_RFC_LOT">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_EC_GETMAT_RFC_LOT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZBAPI_PO_CREATE1_851PO">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZBAPI_PO_CREATE1_851PO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZBAPI_PO_CREATE1_851PO_Delete">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZBAPI_PO_CREATE1_851PO_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExportCustomsDataItem">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/GetExportCustomsDataItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_46PO_RECORD">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZRFC_46PO_RECORD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_POSTYCN">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_POSTYCN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PACKING_POST">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_PACKING_POST" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PACKING_POST_M">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_PACKING_POST_M" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SCRAP_ZSC1_POST">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_SCRAP_ZSC1_POST" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_COMPARE_QWMSSAP">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_COMPARE_QWMSSAP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_PACKING_TO_QWMS">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_PACKING_TO_QWMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_PCBA_LIKE_ZCL2">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_PCBA_LIKE_ZCL2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_MRPCODE">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_MRPCODE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_POSTYCN_QMMC">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_POSTYCN_QMMC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZRFC_MM_SENDE_EDI_46PO">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/ZRFC_MM_SENDE_EDI_46PO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_DIAOBO_QWMS_TO_SAP">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_DIAOBO_QWMS_TO_SAP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_SCRAP_GR_QWMS">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_SCRAP_GR_QWMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_MM_RFC_ZBRF_DATA_TO_RC">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_MM_RFC_ZBRF_DATA_TO_RC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_RFC_ZSCRAP_TO_QWMS">
+      <soap12:operation soapAction="http://SDSWS05/SAP_WebService/QSMC/EC/MM/MM_Service.asmx/Z_RFC_ZSCRAP_TO_QWMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MM_Service">
+    <wsdl:port name="MM_ServiceSoap" binding="tns:MM_ServiceSoap">
+      <soap:address location="http://localhost:52605/MM_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MM_ServiceSoap12" binding="tns:MM_ServiceSoap12">
+      <soap12:address location="http://localhost:52605/MM_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

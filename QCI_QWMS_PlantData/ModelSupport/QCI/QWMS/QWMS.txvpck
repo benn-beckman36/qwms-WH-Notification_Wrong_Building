@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<nodeSet>
+  <view uin="a0d01uz7irbuj3n">
+    <property name="$name" value="QWMS" />
+    <property name="$metaclass" value="Package Diagram" />
+    <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.strMandt" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.strCrnam" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.strErrmsg" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.PlantData()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.PlantData(System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.MANDT" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.CRNAM" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.ERRMSG" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.CheckExistedMatnr(System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetEmptyLocation(System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlSttyp()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlLotyp()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlCgcls()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlFlage()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetMenuType()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlInsmk()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlInsmk(System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetProgramClass()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetProgramData(System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetPlantStorageData(System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetPlantStorageData(System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlWerksData()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlWerksLgortData()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlLgortData()" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetDdlLgortData(System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetAllLocatData(System.String,System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetLocatPosition(System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.GetLocatData(System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.CheckStorageData(System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.CheckStorageData(System.String,System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.CheckExistedStorageData(System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.QueryPartData(System.String,System.String,System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData.QueryMappingData(System.String,System.String,System.String,System.String)" />
+      <reference referencedUin="source:QCI_QWMS_PlantData:QCI.QWMS.PlantData:QCI.ECBase" />
+    </reference>
+  </view>
+</nodeSet>

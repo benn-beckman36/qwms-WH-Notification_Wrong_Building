@@ -1,0 +1,19 @@
+﻿[
+  {
+    "Site": "QMH",
+    "DbCode": "QMH_7300",
+    "SystemID": "QWMSQMH7300",
+    "LinkID": "QWMS_7300",
+    "RequestKey": "9D089B8D-1EC6-4F85-BFDC-1E70C7869920",
+    "EncryptKey": "E34CF0B9"
+  },
+
+  {
+    "Site": "QSMC",
+    "DbCode": "ErrCode",
+    "SystemID": "QSMC",
+    "LinkID": "ErrorLog",
+    "RequestKey": "DC1F3C02-8FA1-43A1-8D07-B0DCE007F5E9",
+    "EncryptKey": "133CC090"
+  }
+]

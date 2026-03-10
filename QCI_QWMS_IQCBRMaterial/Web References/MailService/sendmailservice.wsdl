@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendMailNotice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="From" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="To" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Bcc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBodyHtml" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Attachments" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailNoticeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMailNoticeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBodyHtml" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="From" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="To" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Bcc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Attachments" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailSmtpAuthentication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBodyHtml" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="From" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="To" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Bcc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Attachments" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailSmtpAuthenticationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMailSmtpAuthenticationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimplifySendMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsHtml" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimplifySendMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SimplifySendMailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailInsertQueue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="From" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="To" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Bcc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBodyHtml" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Attachments" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailInsertQueueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendEmailInsertQueueResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMobileNotice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromEmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToEmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMobileNoticeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMobileNoticeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSNotice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromEmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToEmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSNoticeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSNoticeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByPhoneID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhoneID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByPhoneIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSByPhoneIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByPhoneIDOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhoneID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByPhoneIDOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSByPhoneIDOrderResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByEmployeeID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToEmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByEmployeeIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSByEmployeeIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByEmployeeIDOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToEmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSByEmployeeIDOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSByEmployeeIDOrderResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendUnicomSMSByPhoneID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Site" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TeamPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PhoneID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SMSContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendUnicomSMSByPhoneIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendUnicomSMSByPhoneIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mgs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendMailNoticeSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMailNotice" />
+  </wsdl:message>
+  <wsdl:message name="SendMailNoticeSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMailNoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMailSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMail" />
+  </wsdl:message>
+  <wsdl:message name="SendMailSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMailSmtpAuthenticationSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMailSmtpAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="SendMailSmtpAuthenticationSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMailSmtpAuthenticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimplifySendMailSoapIn">
+    <wsdl:part name="parameters" element="tns:SimplifySendMail" />
+  </wsdl:message>
+  <wsdl:message name="SimplifySendMailSoapOut">
+    <wsdl:part name="parameters" element="tns:SimplifySendMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailInsertQueueSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmailInsertQueue" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailInsertQueueSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailInsertQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMobileNoticeSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMobileNotice" />
+  </wsdl:message>
+  <wsdl:message name="SendMobileNoticeSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMobileNoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSNoticeSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSNotice" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSNoticeSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSNoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByPhoneIDSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSByPhoneID" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByPhoneIDSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSByPhoneIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByPhoneIDOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSByPhoneIDOrder" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByPhoneIDOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSByPhoneIDOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByEmployeeIDSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSByEmployeeID" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByEmployeeIDSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSByEmployeeIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByEmployeeIDOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSByEmployeeIDOrder" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSByEmployeeIDOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSByEmployeeIDOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendUnicomSMSByPhoneIDSoapIn">
+    <wsdl:part name="parameters" element="tns:SendUnicomSMSByPhoneID" />
+  </wsdl:message>
+  <wsdl:message name="SendUnicomSMSByPhoneIDSoapOut">
+    <wsdl:part name="parameters" element="tns:SendUnicomSMSByPhoneIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SendMailServiceSoap">
+    <wsdl:operation name="SendMailNotice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送邮件方法 返回bool&lt;/br&gt;
+            输入参数：&lt;/br&gt;
+            Site:公司别(QSMC/CSMC等)&lt;/br&gt;
+            TeamPwd:Team密码&lt;/br&gt;
+            From:发件人(工号或邮件地址，可以放空使用默认发件人Web_Notice@quantacn.com发送)&lt;/br&gt;
+            To:收件人(工号或邮件地址，多个用户用分号分隔)&lt;/br&gt;
+            Cc:抄送人&lt;/br&gt;
+            Bcc:密抄人&lt;/br&gt;
+            Subject:邮件主题&lt;/br&gt;
+            Body:邮件正文&lt;/br&gt;
+            IsBodyHtml:是否使用Html格式&lt;/br&gt;
+            Attachments:附件地址(共享的绝对路径，多个附件以分号分隔，调用发邮件方法之前请先将附件统一上传至\\quantacn.com\oafs\OA_MailAttachment)&lt;/br&gt;
+            UserName:Smtp登录帐号(可以放空使用默认帐号)&lt;/br&gt;
+            Password:Smtp登录帐号(可以放空使用默认帐号)&lt;/br&gt;
+            LogID:记录的日志ID&lt;/br&gt;
+            ErrorMessage:失败的提示信息</wsdl:documentation>
+      <wsdl:input message="tns:SendMailNoticeSoapIn" />
+      <wsdl:output message="tns:SendMailNoticeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送邮件方法 返回bool&lt;/br&gt;
+            输入参数：&lt;/br&gt;
+            TeamPwd:Team密码&lt;/br&gt;
+            From:发件人(工号或邮件地址，可以放空使用默认发件人Web_Notice@quantacn.com发送)&lt;/br&gt;
+            To:收件人(工号或邮件地址，多个用户用分号分隔)&lt;/br&gt;
+            Cc:抄送人&lt;/br&gt;
+            Bcc:密抄人&lt;/br&gt;
+            Subject:邮件主题&lt;/br&gt;
+            Body:邮件正文&lt;/br&gt;
+            IsBodyHtml:是否使用Html格式&lt;/br&gt;
+            Attachments:附件地址(共享的绝对路径，多个附件以分号分隔，调用发邮件方法之前最好先将附件统一上传至\\quantacn.com\oafs\OA_MailAttachment可提高邮件的发送速度)&lt;/br&gt;
+            Mgs:邮件发送的日志ID或者错误提示信息</wsdl:documentation>
+      <wsdl:input message="tns:SendMailSoapIn" />
+      <wsdl:output message="tns:SendMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailSmtpAuthentication">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送邮件方法 返回bool&lt;/br&gt;
+            输入参数：&lt;/br&gt;
+            TeamPwd:Team密码&lt;/br&gt;
+            From:发件人(工号或邮件地址，可以放空使用默认发件人Web_Notice@quantacn.com发送)&lt;/br&gt;
+            To:收件人(工号或邮件地址，多个用户用分号分隔)&lt;/br&gt;
+            Cc:抄送人&lt;/br&gt;
+            Bcc:密抄人&lt;/br&gt;
+            Subject:邮件主题&lt;/br&gt;
+            Body:邮件正文&lt;/br&gt;
+            IsBodyHtml:是否使用Html格式&lt;/br&gt;
+            Attachments:附件地址(共享的绝对路径，多个附件以分号分隔，调用发邮件方法之前请先将附件统一上传至\\quantacn.com\oafs\OA_MailAttachment)&lt;/br&gt;
+            UserName:Smtp帐号(可以放空使用默认账户)&lt;/br&gt;
+            Password:Smtp密码(可以放空使用默认账户)&lt;/br&gt;
+            Mgs:邮件发送的日志ID或者错误提示信息</wsdl:documentation>
+      <wsdl:input message="tns:SendMailSmtpAuthenticationSoapIn" />
+      <wsdl:output message="tns:SendMailSmtpAuthenticationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SimplifySendMail">
+      <wsdl:input message="tns:SimplifySendMailSoapIn" />
+      <wsdl:output message="tns:SimplifySendMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailInsertQueue">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送邮件到MSMQ队列 返回bool&lt;/br&gt;
+            输入参数：&lt;/br&gt;
+            Site:公司别(QSMC/CSMC等)&lt;/br&gt;
+            TeamPwd:Team密码&lt;/br&gt;
+            From:发件人(工号或邮件地址，可以放空使用默认发件人Web_Notice@quantacn.com发送)&lt;/br&gt;
+            To:收件人(工号或邮件地址，多个用户用分号分隔)&lt;/br&gt;
+            Cc:抄送人&lt;/br&gt;
+            Bcc:密抄人&lt;/br&gt;
+            Subject:邮件主题&lt;/br&gt;
+            Body:邮件正文&lt;/br&gt;
+            IsBodyHtml:是否使用Html格式&lt;/br&gt;
+            Attachments:附件地址(共享的绝对路径，多个附件以分号分隔，调用发邮件方法之前请先将附件统一上传至\\quantacn.com\oafs\OA_MailAttachment)&lt;/br&gt;
+            UserName:Smtp登录帐号(可以放空使用默认帐号)&lt;/br&gt;
+            Password:Smtp登录帐号(可以放空使用默认帐号)&lt;/br&gt;
+            ErrorMessage:失败的提示信息</wsdl:documentation>
+      <wsdl:input message="tns:SendEmailInsertQueueSoapIn" />
+      <wsdl:output message="tns:SendEmailInsertQueueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMobileNotice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送SMS短信方法 返回bool&lt;/br&gt;
+            输入参数：&lt;/br&gt;
+            Site:公司别(QSMC/CSMC等)&lt;/br&gt;
+            TeamPwd:Team密码&lt;/br&gt;
+            FromEmployeeID:发送人(工号或手机号码)&lt;/br&gt;
+            ToEmployeeID:接收人(工号或手机号码，多个用户用分号分隔)&lt;/br&gt;
+            Body:短信内容&lt;/br&gt;
+            LogID:记录的日志ID&lt;/br&gt;
+            ErrorMessage:失败的提示信息</wsdl:documentation>
+      <wsdl:input message="tns:SendMobileNoticeSoapIn" />
+      <wsdl:output message="tns:SendMobileNoticeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSNotice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送SMS短信方法 返回bool&lt;/br&gt;
+            输入参数：&lt;/br&gt;
+            TeamPwd:Team密码&lt;/br&gt;
+            FromEmployeeID:发送人(工号或手机号码)&lt;/br&gt;
+            ToEmployeeID:接收人(工号或手机号码，多个用户用分号分隔)&lt;/br&gt;
+            Body:短信内容</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSNoticeSoapIn" />
+      <wsdl:output message="tns:SendSMSNoticeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByPhoneID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过手机号发送短信 返回bool&lt;/br&gt;
+        输入参数：&lt;/br&gt;
+        Site:公司别&lt;/br&gt;
+        Unit:使用单位：比如MIS,GA,HR&lt;/br&gt;
+        TeamPwd:Team密码&lt;/br&gt;
+        PhoneID:接收人手机号（多个手机号用逗号分隔，最多1000个）&lt;/br&gt;
+        SMSContent:短信内容最大402个字或字符，短信内容必须与联通注册模板信息一致，目前模板中必须包括'通知'字样，例如：HR系统通知，您的验证码为12345&lt;/br&gt;
+        Mgs:返回信息</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSByPhoneIDSoapIn" />
+      <wsdl:output message="tns:SendSMSByPhoneIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByPhoneIDOrder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过手机号发送短信，可预约 返回bool&lt;/br&gt;
+        输入参数：&lt;/br&gt;
+        Site:公司别&lt;/br&gt;
+        Unit:使用单位：比如MIS,GA,HR&lt;/br&gt;
+        TeamPwd:Team密码&lt;/br&gt;
+        PhoneID:接收人手机号（多个手机号用逗号分隔，最多1000个）&lt;/br&gt;
+        SMSContent:短信内容最大402个字或字符，短信内容必须与联通注册模板信息一致，目前模板中必须包括'通知'字样，例如：HR系统通知，您的验证码为12345&lt;/br&gt;
+        OrderTime：预约发送时间，格式:yyyyMMddHHmmss,如‘20150901010101’，立即发送请填空
+       （预约时间要写当前时间5分钟之后的时间，若预约时间少于5分钟，则为立即发送。）&lt;/br&gt;
+        Mgs:返回信息</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSByPhoneIDOrderSoapIn" />
+      <wsdl:output message="tns:SendSMSByPhoneIDOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByEmployeeID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过手机号/工号发送短信 返回bool&lt;/br&gt;
+        输入参数：&lt;/br&gt;
+        Site：公司别&lt;/br&gt;
+        Unit:使用单位：比如MIS,GA,HR&lt;/br&gt;
+        TeamPwd:Team密码&lt;/br&gt;
+        ToEmployeeID:接收人手机号/工号（多个手机号用逗号分隔，最多1000个）&lt;/br&gt;
+        SMSContent:短信内容最大402个字或字符，短信内容必须与联通注册模板信息一致，目前模板中必须包括'通知'字样，例如：HR系统通知，您的验证码为12345&lt;/br&gt;
+        Mgs:返回信息</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSByEmployeeIDSoapIn" />
+      <wsdl:output message="tns:SendSMSByEmployeeIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByEmployeeIDOrder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过手机号/工号发送短信，可预约 返回bool&lt;/br&gt;
+        输入参数：&lt;/br&gt;
+        Site：公司别&lt;/br&gt;
+        Unit:使用单位：比如MIS,GA,HR&lt;/br&gt;
+        TeamPwd:Team密码&lt;/br&gt;
+        ToEmployeeID:接收人手机号/工号（多个手机号用逗号分隔，最多1000个）&lt;/br&gt;
+        SMSContent:短信内容最大402个字或字符，短信内容必须与联通注册模板信息一致，目前模板中必须包括'通知'字样，例如：HR系统通知，您的验证码为12345&lt;/br&gt;
+        OrderTime：预约发送时间，格式:yyyyMMddHHmmss,如‘20150901010101’，立即发送请填空
+       （预约时间要写当前时间5分钟之后的时间，若预约时间少于5分钟，则为立即发送。）&lt;/br&gt;
+        Mgs:返回信息</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSByEmployeeIDOrderSoapIn" />
+      <wsdl:output message="tns:SendSMSByEmployeeIDOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendUnicomSMSByPhoneID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过手机号发送短信 返回bool&lt;/br&gt;
+        输入参数：&lt;/br&gt;
+        Site:公司别&lt;/br&gt;
+        Unit:使用单位：比如MIS,GA,HR&lt;/br&gt;
+        TeamPwd:Team密码&lt;/br&gt;
+        PhoneID:接收人手机号（多个手机号用逗号分隔，最多1000个）&lt;/br&gt;
+        SMSContent:短信内容最大402个字或字符，短信内容必须与联通注册模板信息一致，目前模板中必须包括'通知'字样，例如：HR系统通知，您的验证码为12345&lt;/br&gt;
+        Mgs:返回信息</wsdl:documentation>
+      <wsdl:input message="tns:SendUnicomSMSByPhoneIDSoapIn" />
+      <wsdl:output message="tns:SendUnicomSMSByPhoneIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SendMailServiceSoap" type="tns:SendMailServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendMailNotice">
+      <soap:operation soapAction="http://tempuri.org/SendMailNotice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMail">
+      <soap:operation soapAction="http://tempuri.org/SendMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailSmtpAuthentication">
+      <soap:operation soapAction="http://tempuri.org/SendMailSmtpAuthentication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimplifySendMail">
+      <soap:operation soapAction="http://tempuri.org/SimplifySendMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailInsertQueue">
+      <soap:operation soapAction="http://tempuri.org/SendEmailInsertQueue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMobileNotice">
+      <soap:operation soapAction="http://tempuri.org/SendMobileNotice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSNotice">
+      <soap:operation soapAction="http://tempuri.org/SendSMSNotice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByPhoneID">
+      <soap:operation soapAction="http://tempuri.org/SendSMSByPhoneID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByPhoneIDOrder">
+      <soap:operation soapAction="http://tempuri.org/SendSMSByPhoneIDOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByEmployeeID">
+      <soap:operation soapAction="http://tempuri.org/SendSMSByEmployeeID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByEmployeeIDOrder">
+      <soap:operation soapAction="http://tempuri.org/SendSMSByEmployeeIDOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendUnicomSMSByPhoneID">
+      <soap:operation soapAction="http://tempuri.org/SendUnicomSMSByPhoneID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SendMailServiceSoap12" type="tns:SendMailServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendMailNotice">
+      <soap12:operation soapAction="http://tempuri.org/SendMailNotice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMail">
+      <soap12:operation soapAction="http://tempuri.org/SendMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailSmtpAuthentication">
+      <soap12:operation soapAction="http://tempuri.org/SendMailSmtpAuthentication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SimplifySendMail">
+      <soap12:operation soapAction="http://tempuri.org/SimplifySendMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailInsertQueue">
+      <soap12:operation soapAction="http://tempuri.org/SendEmailInsertQueue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMobileNotice">
+      <soap12:operation soapAction="http://tempuri.org/SendMobileNotice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSNotice">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSNotice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByPhoneID">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSByPhoneID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByPhoneIDOrder">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSByPhoneIDOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByEmployeeID">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSByEmployeeID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSByEmployeeIDOrder">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSByEmployeeIDOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendUnicomSMSByPhoneID">
+      <soap12:operation soapAction="http://tempuri.org/SendUnicomSMSByPhoneID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SendMailService">
+    <wsdl:port name="SendMailServiceSoap" binding="tns:SendMailServiceSoap">
+      <soap:address location="https://oaap.quantacn.com/OAMS/SMS/SendMailService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SendMailServiceSoap12" binding="tns:SendMailServiceSoap12">
+      <soap12:address location="https://oaap.quantacn.com/OAMS/SMS/SendMailService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

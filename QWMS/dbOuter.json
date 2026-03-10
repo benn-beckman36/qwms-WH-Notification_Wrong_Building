@@ -1,0 +1,11 @@
+﻿[ 
+  { "Site":"QSMC", "DbCode":"TFC_9100", "SystemID":"QWMS_W", "LinkID":"QWMS_9100", "RequestKey":"ECBCBF7B-671C-4335-9AA6-2FE88B66803F", "EncryptKey":"9FFA43AA" },
+  { "Site":"QSMC", "DbCode":"TCC_9200", "SystemID":"QWMS_W", "LinkID":"QWMS_9200", "RequestKey":"673E5A75-0572-46AD-B56F-92D372651A09", "EncryptKey":"B51B3EF4" },
+  { "Site":"QSMC", "DbCode":"TLC_9600", "SystemID":"QWMS_W", "LinkID":"QWMS_9600", "RequestKey":"0DDC1153-810B-4BD5-8247-260ED1E2024F", "EncryptKey":"C9BFB45A" },
+  { "Site":"QSMC", "DbCode":"TTC_9800", "SystemID":"QWMS_W", "LinkID":"QWMS_9800", "RequestKey":"73ED12E0-27A3-40B7-9B85-CAA1E75303BF", "EncryptKey":"45FCCCE0" },
+  { "Site":"QSMC", "DbCode":"TGC_9900", "SystemID":"QWMS_W", "LinkID":"QWMS_9900", "RequestKey":"8B04D567-37DF-43D5-BAA4-9AE9A08341C6", "EncryptKey":"5257A3C2" },
+  { "Site":"QCMC", "DbCode":"TNC_9210", "SystemID":"GBWMSQCMC_W", "LinkID":"GBWMS_9210", "RequestKey":"AEC321E9-F15F-48D6-A0DA-928D68904A25", "EncryptKey":"89098191" },
+  {"Site": "QMH","DbCode": "QMH_7300","SystemID": "QWMS","LinkID": "QWMS_7300","RequestKey": "8527BD80-D96E-4EC4-A36F-1B3E534AA548","EncryptKey": "70B852ED"},
+
+  { "Site":"QSMC", "DbCode":"ErrCode", "SystemID":"QSMC", "LinkID":"ErrorLog", "RequestKey":"DC1F3C02-8FA1-43A1-8D07-B0DCE007F5E9", "EncryptKey":"133CC090" }
+]
