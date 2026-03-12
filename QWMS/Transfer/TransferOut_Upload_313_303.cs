@@ -195,35 +195,6 @@ namespace QWMS
             }
         }
 
-        //private Dictionary<string, string> GetWarehouseBuildingMap()
-        //{
-        //    DataTable dtGetWHBulding = objTransfer.GetWHBuilding();
-
-        //    Dictionary<string, string> whBuilding = new Dictionary<string, string>();
-
-        //    if (dtGetWHBulding == null || dtGetWHBulding.Rows.Count == 0)
-        //        return whBuilding;
-
-        //    foreach (DataRow row in dtGetWHBulding.Rows)
-        //    {
-        //        string building = row["Building"].ToString();
-        //        string warehouses = row["WarehouseCodes"].ToString();
-
-        //        string[] codes = warehouses.Split(';');
-
-        //        foreach (string code in codes)
-        //        {
-        //            string key = code.Trim();
-
-        //            if (!whBuilding.ContainsKey(key))
-        //            {
-        //                whBuilding.Add(key, building);
-        //            }
-        //        }
-        //    }
-
-        //    return whBuilding;
-        //}
 
         private Dictionary<string, string> _whBuildingCache;
 
@@ -260,10 +231,8 @@ namespace QWMS
     string toWarehouse,
     Dictionary<string, string> whBuilding)
         {
-            if (!whBuilding.ContainsKey(fromWarehouse) ||
-                !whBuilding.ContainsKey(toWarehouse))
+            if (!ValidateWarehouseExist(whBuilding, fromWarehouse, toWarehouse))
             {
-                stsWarning.Text = "The warehouse does not exist in the system!!!";
                 return false;
             }
 
@@ -272,7 +241,40 @@ namespace QWMS
 
             if (fromBuilding == toBuilding)
             {
-                stsWarning.Text = "Source and destination warehouses cannot be in the same building!!!";
+                MessageBox.Show(
+    $"Warehouses {fromWarehouse} and {toWarehouse} are in the same building ({fromBuilding})!!",
+    "Warning",
+    MessageBoxButtons.OK,
+    MessageBoxIcon.Warning
+);
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool ValidateWarehouseExist(
+    Dictionary<string, string> whBuilding,
+    string fromWarehouse,
+    string toWarehouse)
+        {
+            List<string> invalidWarehouses = new List<string>();
+
+            if (!whBuilding.ContainsKey(fromWarehouse))
+                invalidWarehouses.Add(fromWarehouse);
+
+            if (!whBuilding.ContainsKey(toWarehouse))
+                invalidWarehouses.Add(toWarehouse);
+
+            if (invalidWarehouses.Count > 0)
+            {
+                MessageBox.Show(
+                    $"Warehouses [{string.Join(", ", invalidWarehouses)}] do not exist in the system!!",
+                    "Warehouse Validation",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
                 return false;
             }
 
