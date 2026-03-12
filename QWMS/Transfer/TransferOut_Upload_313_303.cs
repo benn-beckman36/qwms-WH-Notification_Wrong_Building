@@ -1157,7 +1157,8 @@ namespace QWMS
             {
                 DataSet dsResult = new DataSet();
                 MM.MM_Service obj = new QWMS.MM.MM_Service();
-                dsResult = obj.Z_MM_RFC_DIAOBO_QWMS_TO_SAP(varTypeToSap, ds);
+                //dsResult = obj.Z_MM_RFC_DIAOBO_QWMS_TO_SAP(varTypeToSap, ds);
+                dsResult = null;
                 return dsResult;
             }
             catch (Exception ex)

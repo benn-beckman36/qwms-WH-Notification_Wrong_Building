@@ -3355,6 +3355,47 @@ namespace QCI
             }
             #endregion
 
+            #region GetWHBuilding
+            public DataTable GetWHBuilding()
+            {
+                this.ControlMethodName = "GetWHBuilding";
+                this.ControlMethodParm = "";
+                if (ControlTraceCode == "T") 
+                {
+                    ControlHandleError("000", "", "");
+                }
+
+                StringBuilder sbSQL = new StringBuilder();
+                DataTable dt = new DataTable();
+                sbSQL.AppendFormat(" SELECT CTRLNM AS Building, CTRLC1 AS WarehouseCodes FROM WHCTRL WITH (NOLOCK) WHERE CTRLID = 'WHBuilding'");
+
+                try
+                {
+                    ControlHandleDB();
+                    dt = ControlSqlAccess.GetDataTable(sbSQL.ToString());
+                    ControlSqlAccess.CloseConnection();
+                }
+                catch (CommonObjectsException ex)
+                {
+                    //讀取Common Object的真正錯誤訊息，例如ControlSqlAccess.ErrorMessage
+                    ControlErrorDescription = ControlErrorDescription + ";" + ex.SourceErrMsg;
+                    ControlExceptionType = ex.SourceExceptionType;
+                    this.ControlPriority = "1";
+                    ControlHandleError(ex.Message, ex.Source, ex.StackTrace);
+                    throw ex;
+                }//可自行增加要handle的Exception  
+                catch (Exception ex)
+                {
+                    ControlErrorDescription = ControlErrorDescription + ";" + ex.Message;
+                    ControlExceptionType = ex.GetType().FullName;
+                    this.ControlPriority = "1";
+                    ControlHandleError(ex.Message, ex.Source, ex.StackTrace);
+                    throw new Exception("999");
+                }
+                return dt;
+            }
+
+            #endregion
             #endregion
 
 
