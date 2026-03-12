@@ -195,8 +195,93 @@ namespace QWMS
             }
         }
 
+        //private Dictionary<string, string> GetWarehouseBuildingMap()
+        //{
+        //    DataTable dtGetWHBulding = objTransfer.GetWHBuilding();
+
+        //    Dictionary<string, string> whBuilding = new Dictionary<string, string>();
+
+        //    if (dtGetWHBulding == null || dtGetWHBulding.Rows.Count == 0)
+        //        return whBuilding;
+
+        //    foreach (DataRow row in dtGetWHBulding.Rows)
+        //    {
+        //        string building = row["Building"].ToString();
+        //        string warehouses = row["WarehouseCodes"].ToString();
+
+        //        string[] codes = warehouses.Split(';');
+
+        //        foreach (string code in codes)
+        //        {
+        //            string key = code.Trim();
+
+        //            if (!whBuilding.ContainsKey(key))
+        //            {
+        //                whBuilding.Add(key, building);
+        //            }
+        //        }
+        //    }
+
+        //    return whBuilding;
+        //}
+
+        private Dictionary<string, string> _whBuildingCache;
+
+        private Dictionary<string, string> GetWarehouseBuildingMap()
+        {
+            if (_whBuildingCache != null)
+                return _whBuildingCache;
+
+            _whBuildingCache = new Dictionary<string, string>();
+
+            DataTable dt = objTransfer.GetWHBuilding();
+
+            if (dt == null || dt.Rows.Count == 0)
+                return _whBuildingCache;
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string building = row["Building"].ToString();
+                string[] codes = row["WarehouseCodes"].ToString().Split(';');
+
+                foreach (string code in codes)
+                {
+                    _whBuildingCache[code.Trim()] = building;
+                }
+            }
+
+            return _whBuildingCache;
+        }
+
+
+
+        private bool CheckWarehouseBuilding(
+    string fromWarehouse,
+    string toWarehouse,
+    Dictionary<string, string> whBuilding)
+        {
+            if (!whBuilding.ContainsKey(fromWarehouse) ||
+                !whBuilding.ContainsKey(toWarehouse))
+            {
+                stsWarning.Text = "The warehouse does not exist in the system!!!";
+                return false;
+            }
+
+            string fromBuilding = whBuilding[fromWarehouse];
+            string toBuilding = whBuilding[toWarehouse];
+
+            if (fromBuilding == toBuilding)
+            {
+                stsWarning.Text = "Source and destination warehouses cannot be in the same building!!!";
+                return false;
+            }
+
+            return true;
+        }
+
         private void btnImport_Click(object sender, EventArgs e)
         {
+
             stsWarning.Text = "";
             dtCombine.Clear();
             objTransfer = new Transfer(UserData);
@@ -216,31 +301,41 @@ namespace QWMS
             dtData.Clear();
             try
             {
+                #region 1 Check file selected
                 if (string.IsNullOrEmpty(this.txtFile.Text.Trim()))
                 {
                     stsWarning.Text = "Please select one file!!";
                     return;
                 }
-                # region 校验格式
+
+                #endregion
+
+                # region 校验格式 / 2 Check file format
                 string strFileName = this.txtFile.Text.Trim();
                 string strFileType = strFileName.Substring(strFileName.LastIndexOf(".") + 1).ToLower();
 
                 if (strFileType.ToUpper() != "XLS" && strFileType.ToUpper() != "XLSX")
                 {
                     stsWarning.Text = "只能上传xls 和xlsx格式的EXCEL文件，请选择正确的文件格式！";
+                    return;
                 }
                 # endregion
+
                 stsWarning.Text = "Please don't close the window ,Check the data...";
                 QWMS.Common.ClaExeclHelper objExcel = new QWMS.Common.ClaExeclHelper();
                 //string strCmd = "select * from [Sheet1$]";
                 //dtImport = objExcel.ExcelQuery(this.txtFile.Text.Trim(), strCmd);
                 # region 获取EXCEL数据
                 dtImport = objExcel.GetDataTableFromExcel(strFileName, true);
-                if (dtImport.Rows.Count <= 0)
+
+                if (dtImport == null || dtImport.Rows.Count <= 0)
                 {
                     stsWarning.Text = "未获取到Excel数据，请确认表格是否有数据";
+                    return;
                 }
                 #endregion
+
+                #region 5 Prepare dtCombine
 
                 dtCombine.Columns.Add("ZEILE");
                 dtCombine.Columns.Add("FWERKS");
@@ -253,8 +348,18 @@ namespace QWMS
                 dtCombine.Columns.Add("DWERKS");
                 dtCombine.Columns.Add("DLGORT");
 
+                #endregion
+
+                #region 6 Load warehouse mapping
+                Dictionary<string, string> whBuilding = GetWarehouseBuildingMap();
+                #endregion
+
+
                 foreach (DataRow dr in dtImport.Rows)
                 {
+
+
+                    #region 7 Check required fields
                     //檢查是不是空值
 
                     if (string.IsNullOrEmpty(dr["item"].ToString().Trim()) ||
@@ -283,7 +388,23 @@ namespace QWMS
                         stsWarning.Text = "料号、数量、调出厂区、调出仓别有空值,请重新核对";
                         return;
                     }
-                    else if (dr["item"].ToString() == "1")
+                    #endregion
+
+                    #region 8 Warehouse validation
+
+                    string fromWarehouse = dr["调出厂"]?.ToString();
+                    string toWarehouse = dr["接收仓"]?.ToString();
+
+                    if (!CheckWarehouseBuilding(fromWarehouse, toWarehouse, whBuilding))
+                    {
+                        return;
+                    }
+
+                    #endregion
+
+                    #region 9 Item limit check
+
+                    if (dr["item"].ToString() == "1")
                     {
                         i = 1;
                     }
@@ -296,6 +417,8 @@ namespace QWMS
                             return;
                         }
                     }
+                    #endregion
+
 
                     DataRow drCombine = dtCombine.NewRow();
                     drCombine["ZEILE"] = i.ToString("0000");
@@ -375,11 +498,11 @@ namespace QWMS
                 #region 校验303调拨同厂区无法开单
                 foreach (DataRow dr in dtCombine.Rows)
                 {
-                if (strType == "SAP_303" && dr["FWERKS"].ToString() == dr["DWERKS"].ToString())
-                {
-                    stsWarning.Text = "303调拨相同厂区无法开单。";
-                    return;
-                }
+                    if (strType == "SAP_303" && dr["FWERKS"].ToString() == dr["DWERKS"].ToString())
+                    {
+                        stsWarning.Text = "303调拨相同厂区无法开单。";
+                        return;
+                    }
                 }
                 #endregion
                 #region 校验数据
@@ -468,7 +591,7 @@ namespace QWMS
         {
             try
             {
-                stsWarning.Text = "";               
+                stsWarning.Text = "";
                 dtMblnr.Rows.Clear();
                 //313 303开调拨单 当月最后一天20点以后添加弹窗提醒
                 DateTime lastDay = Convert.ToDateTime(DateTime.Now.AddMonths(1).ToString("yyyy-MM-1")).AddHours(-4);
@@ -520,6 +643,16 @@ namespace QWMS
                         if (strType == "SAP_303" && dr["FWERKS"].ToString() == dr["DWERKS"].ToString())
                         {
                             stsWarning.Text = "303调拨相同厂区无法开单。";
+                            return;
+                        }
+
+                        Dictionary<string, string> whBuilding = GetWarehouseBuildingMap();
+
+                        string fromWarehouse = dr["FLGORT"]?.ToString();
+                        string toWarehouse = dr["DLGORT"]?.ToString();
+
+                        if (!CheckWarehouseBuilding(fromWarehouse, toWarehouse, whBuilding))
+                        {
                             return;
                         }
                     }
@@ -1157,8 +1290,7 @@ namespace QWMS
             {
                 DataSet dsResult = new DataSet();
                 MM.MM_Service obj = new QWMS.MM.MM_Service();
-                //dsResult = obj.Z_MM_RFC_DIAOBO_QWMS_TO_SAP(varTypeToSap, ds);
-                dsResult = null;
+                dsResult = obj.Z_MM_RFC_DIAOBO_QWMS_TO_SAP(varTypeToSap, ds);
                 return dsResult;
             }
             catch (Exception ex)
