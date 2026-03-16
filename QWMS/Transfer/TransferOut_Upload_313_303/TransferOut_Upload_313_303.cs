@@ -203,7 +203,7 @@ namespace QWMS
             if (_whBuildingCache != null)
                 return _whBuildingCache;
 
-            _whBuildingCache = new Dictionary<string, string>();
+            _whBuildingCache = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
             DataTable dt = objTransfer.GetWHBuilding();
 
@@ -226,57 +226,99 @@ namespace QWMS
 
 
 
-        private bool CheckWarehouseBuilding(
-    string fromWarehouse,
-    string toWarehouse,
-    Dictionary<string, string> whBuilding)
+        //  private bool ValidateWarehouseTransfer(
+        //string fromWarehouse,
+        //string toWarehouse,
+        //Dictionary<string, string> whBuilding,
+        //out string errorMessage)
+        //  {
+        //      errorMessage = string.Empty;
+
+        //      if (whBuilding == null)
+        //          throw new ArgumentNullException(nameof(whBuilding), "whBuilding has a null value");
+
+        //      if (whBuilding.Count == 0)
+        //      {
+        //          errorMessage = "whBuilding is empty!!";
+        //          return false;
+        //      }
+
+        //      if (string.IsNullOrWhiteSpace(fromWarehouse))
+        //      {
+        //          errorMessage = $"Source warehouse cannot be empty.";
+        //          return false;
+        //      }
+
+        //      if (string.IsNullOrWhiteSpace(toWarehouse))
+        //      {
+        //          errorMessage = $"Destination warehouse cannot be empty.";
+        //          return false;
+        //      }
+
+        //      fromWarehouse = fromWarehouse?.Trim();
+        //      toWarehouse = toWarehouse?.Trim();
+
+        //      List<string> invalidWarehouses = new List<string>();
+
+        //      if (!whBuilding.TryGetValue(fromWarehouse, out string fromBuilding))
+        //      {
+        //          invalidWarehouses.Add(fromWarehouse);
+        //      }
+
+        //      if (!whBuilding.TryGetValue(toWarehouse, out string toBuilding))
+        //      {
+        //          invalidWarehouses.Add(toWarehouse);
+        //      }
+
+        //      if (invalidWarehouses.Count > 0)
+        //      {
+        //          errorMessage =
+        //              $"Warehouses [{string.Join(", ", invalidWarehouses)}] do not exist in the system.";
+
+        //          return false;
+        //      }
+
+        //      if (string.IsNullOrWhiteSpace(fromBuilding))
+        //      {
+        //          errorMessage = $"Building of warehouse {fromWarehouse} is invalid.";
+        //          return false;
+        //      }
+
+        //      if (string.IsNullOrWhiteSpace(toBuilding))
+        //      {
+        //          errorMessage = $"Building of warehouse {toWarehouse} is invalid.";
+        //          return false;
+        //      }
+
+        //      if (string.Equals(fromBuilding, toBuilding, StringComparison.OrdinalIgnoreCase))
+        //      {
+        //          errorMessage =
+        //              $"Warehouses {fromWarehouse} and {toWarehouse} are in the same building ({fromBuilding}).";
+        //          return false;
+        //      }
+
+        //      return true;
+        //  }
+
+
+        private bool ValidateWarehouseTransfer(string fromWarehouse, string toWarehouse, Dictionary<string, string> whBuilding, out string errorMessage)
         {
-            if (!ValidateWarehouseExist(whBuilding, fromWarehouse, toWarehouse))
-            {
+            errorMessage = string.Empty;
+
+            if (!ValidateDictionary(whBuilding, out errorMessage))
                 return false;
-            }
 
-            string fromBuilding = whBuilding[fromWarehouse];
-            string toBuilding = whBuilding[toWarehouse];
-
-            if (fromBuilding == toBuilding)
-            {
-                MessageBox.Show(
-    $"Warehouses {fromWarehouse} and {toWarehouse} are in the same building ({fromBuilding})!!",
-    "Warning",
-    MessageBoxButtons.OK,
-    MessageBoxIcon.Warning
-);
+            if (!ValidateWarehouseInput(fromWarehouse, toWarehouse, out errorMessage))
                 return false;
-            }
 
-            return true;
-        }
+            fromWarehouse = fromWarehouse?.Trim();
+            toWarehouse = toWarehouse?.Trim();
 
-        private bool ValidateWarehouseExist(
-    Dictionary<string, string> whBuilding,
-    string fromWarehouse,
-    string toWarehouse)
-        {
-            List<string> invalidWarehouses = new List<string>();
-
-            if (!whBuilding.ContainsKey(fromWarehouse))
-                invalidWarehouses.Add(fromWarehouse);
-
-            if (!whBuilding.ContainsKey(toWarehouse))
-                invalidWarehouses.Add(toWarehouse);
-
-            if (invalidWarehouses.Count > 0)
-            {
-                MessageBox.Show(
-                    $"Warehouses [{string.Join(", ", invalidWarehouses)}] do not exist in the system!!",
-                    "Warehouse Validation",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
-
+            if (!ValidateWarehouseExist(fromWarehouse, toWarehouse, whBuilding, out string fromBuilding, out string toBuilding, out errorMessage))
                 return false;
-            }
+
+            if (!ValidateBuildingRule(fromWarehouse, toWarehouse, fromBuilding, toBuilding, out errorMessage))
+                return false;
 
             return true;
         }
@@ -397,8 +439,15 @@ namespace QWMS
                     string fromWarehouse = dr["调出厂"]?.ToString();
                     string toWarehouse = dr["接收仓"]?.ToString();
 
-                    if (!CheckWarehouseBuilding(fromWarehouse, toWarehouse, whBuilding))
+
+                    if (!ValidateWarehouseTransfer(fromWarehouse, toWarehouse, whBuilding, out string error))
                     {
+                        MessageBox.Show(
+                            error,
+                            "Warehouse Validation",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+
                         return;
                     }
 
@@ -620,6 +669,8 @@ namespace QWMS
                     {
                         strType = "SAP_313";
                     }
+                    Dictionary<string, string> whBuilding = GetWarehouseBuildingMap();
+
                     foreach (DataRow dr in dtCombine.Rows)
                     {
                         if (dr["DLGORT"].ToString() == "")
@@ -648,13 +699,18 @@ namespace QWMS
                             return;
                         }
 
-                        Dictionary<string, string> whBuilding = GetWarehouseBuildingMap();
 
                         string fromWarehouse = dr["FLGORT"]?.ToString();
                         string toWarehouse = dr["DLGORT"]?.ToString();
 
-                        if (!CheckWarehouseBuilding(fromWarehouse, toWarehouse, whBuilding))
+                        if (!ValidateWarehouseTransfer(fromWarehouse, toWarehouse, whBuilding, out string error))
                         {
+                            MessageBox.Show(
+                                error,
+                                "Warehouse Validation",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+
                             return;
                         }
                     }
