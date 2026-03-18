@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using QCI.QWMS;
 using QWMS.Common;
 using System.Diagnostics;
+using Microsoft.VisualBasic.Logging;
 
 namespace QWMS
 {
@@ -196,32 +197,88 @@ namespace QWMS
         }
 
 
+        //private Dictionary<string, string> _whBuildingCache;
+
+        //private Dictionary<string, string> GetWarehouseBuildingMap()
+        //{
+        //    if (_whBuildingCache != null)
+        //        return _whBuildingCache;
+
+        //    _whBuildingCache = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+        //    DataTable dt = objTransfer.GetWHBuilding();
+
+        //    if (dt == null || dt.Rows.Count == 0)
+        //        return _whBuildingCache;
+
+        //    foreach (DataRow row in dt.Rows)
+        //    {
+        //        string building = row["Building"]?.ToString();
+        //        string warehouse = row["WarehouseCodes"]?.ToString();
+
+        //        if (!string.IsNullOrWhiteSpace(warehouse))
+        //        {
+        //            _whBuildingCache[warehouse] = building;
+        //        }
+        //    }
+
+        //    return _whBuildingCache;
+        //}
+
         private Dictionary<string, string> _whBuildingCache;
+        private readonly object _cacheLock = new object();
 
         private Dictionary<string, string> GetWarehouseBuildingMap()
         {
             if (_whBuildingCache != null)
                 return _whBuildingCache;
 
-            _whBuildingCache = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-
-            DataTable dt = objTransfer.GetWHBuilding();
-
-            if (dt == null || dt.Rows.Count == 0)
-                return _whBuildingCache;
-
-            foreach (DataRow row in dt.Rows)
+            lock (_cacheLock)
             {
-                string building = row["Building"].ToString();
-                string[] codes = row["WarehouseCodes"].ToString().Split(';');
+                if (_whBuildingCache != null)
+                    return _whBuildingCache;
 
-                foreach (string code in codes)
+                var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+                DataTable dt = objTransfer?.GetWHBuilding();
+
+                if (dt == null || dt.Rows.Count == 0)
                 {
-                    _whBuildingCache[code.Trim()] = building;
+                    _whBuildingCache = map;
+                    return _whBuildingCache;
                 }
-            }
 
-            return _whBuildingCache;
+                if (!dt.Columns.Contains("WarehouseCodes") ||
+                    !dt.Columns.Contains("Building"))
+                {
+                    throw new InvalidOperationException(
+                        "WHBuilding query result is missing required columns.");
+                }
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    string warehouse = row["WarehouseCodes"]?.ToString()?.Trim();
+                    string building = row["Building"]?.ToString()?.Trim();
+
+                    if (string.IsNullOrWhiteSpace(warehouse))
+                    {
+                        continue;
+                    }
+
+                    if (string.IsNullOrWhiteSpace(building))
+                        continue;
+
+                    if (map.ContainsKey(warehouse))
+                    {
+                        continue;
+                    }
+
+                    map.Add(warehouse, building);
+                }
+
+                _whBuildingCache = map;
+                return _whBuildingCache;
+            }
         }
 
 
@@ -396,6 +453,7 @@ namespace QWMS
 
                 #region 6 Load warehouse mapping
                 Dictionary<string, string> whBuilding = GetWarehouseBuildingMap();
+
                 #endregion
 
 
@@ -670,6 +728,7 @@ namespace QWMS
                         strType = "SAP_313";
                     }
                     Dictionary<string, string> whBuilding = GetWarehouseBuildingMap();
+
 
                     foreach (DataRow dr in dtCombine.Rows)
                     {
