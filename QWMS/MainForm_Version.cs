@@ -39,9 +39,9 @@ namespace QWMS
                 case "9900":
                     rxtReference.Text = "您使用的版本已無法使用，請至以下路徑下載QWMS使用 \n  下載路徑:  http://172.17.0.33/WinAP/QSMCQWMS/publish.htm \n  檔案名稱: " + strFileName + "";
                     break;
-                case "9110":
-                    rxtReference.Text = "您使用的版本已無法使用，請至以下路徑下載QWMS使用 \n  下載路徑:  http://172.17.0.33/WinAP/QSMCQWMS/publish.htm \n  檔案名稱: " + strFileName + "";
-                    break;
+                //case "9110":
+                //    rxtReference.Text = "您使用的版本已無法使用，請至以下路徑下載QWMS使用 \n  下載路徑:  http://172.17.0.33/WinAP/QSMCQWMS/publish.htm \n  檔案名稱: " + strFileName + "";
+                //    break;
                 case "7300":
                     rxtReference.DetectUrls = false;
                     rxtReference.Text = "您使用的版本已無法使用，請至以下路徑下載QWMS使用 \n" + "下載路徑: " + @"\\scmdb31\QSMC_QWMS_Pub\QMH_QWMS_Offline\2024\QMH QWMS NEW" + "\n" +"檔案名稱: " + strFileName + "";
